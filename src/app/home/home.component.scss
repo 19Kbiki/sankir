@@ -1,0 +1,59 @@
+@import "../../veriable.scss";
+
+.cloud {
+  margin: 0 0 3rem;
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    h1 {
+      color: rgb(3, 16, 61);
+      background-color: rgb(98, 143, 238);
+      padding: 0.2rem 1rem;
+    }
+    h2 {
+      span {
+        color: $primarycolor;
+      }
+    }
+  }
+  .body_layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    justify-items: flex-start;
+    .iteams {
+      h1 {
+        color: $primarycolor;
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-bottom: 1.5rem;
+      }
+      ul {
+        padding-left: 5rem;
+        li {
+          list-style: none;
+          line-height: 2.5rem;
+          font-size: 1.2rem;
+          &::before {
+            content: "\2022";
+            color: $primarycolor;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
+      .socila-media {
+        li {
+          padding-right: 3rem;
+          display: inline;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
