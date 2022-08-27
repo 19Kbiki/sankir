@@ -4,17 +4,134 @@
   margin: 0 0 3rem;
   .heading {
     display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
+    justify-content: flex-start;
+    padding: 2rem 0 5rem;
+    column-gap: 11rem;
     h1 {
       color: rgb(3, 16, 61);
-      background-color: rgb(98, 143, 238);
+      background-color: #89a2f8;
       padding: 0.2rem 1rem;
     }
     h2 {
       span {
         color: $primarycolor;
       }
+    }
+  }
+  .body_layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    justify-items: flex-start;
+    column-gap: 12rem;
+    .iteams {
+      .ul-head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+
+        h1 {
+          color: $primarycolor;
+          font-size: 1.7rem;
+          font-weight: 500;
+        }
+      }
+
+      .iteam {
+        padding-bottom: 5rem;
+        img {
+          width: 10%;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        h1 {
+          color: $primarycolor;
+          font-size: 1.7rem;
+          font-weight: 500;
+        }
+      }
+      .domain-name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 3rem;
+        padding-top: 6rem;
+        h1 {
+          color: $primarycolor;
+          font-size: 1.7rem;
+          font-weight: 500;
+          padding-bottom: 1.5rem;
+          border-top: 1px solid;
+          width: 80%;
+          text-align: center;
+          padding: 2rem 0 0rem;
+          font-size: 2rem;
+          margin-top: 5rem;
+        }
+        img {
+          width: 10%;
+        }
+      }
+      ul {
+        padding-left: 10rem;
+        li {
+          list-style: none;
+          line-height: 2.2rem;
+          font-size: 1.2rem;
+          &::before {
+            content: "\2022";
+            color: $primarycolor;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
+      .socila-media {
+        padding-top: 5rem;
+        padding-left: 4rem;
+        li {
+          padding-right: 3rem;
+          display: inline;
+          &::before {
+            display: none;
+          }
+          img {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Architecture {
+  margin: 0 0 3rem;
+  .head {
+    padding: 1rem;
+    text-align: end;
+    h1 {
+      padding: 1rem 3rem;
+      background-color: #013bf8;
+      color: $primarycolor;
+      display: inline;
+      font-size: 2.2rem;
+      box-shadow: 5px 5px 30px -10px #000;
+    }
+  }
+  .ul-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1rem;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
     }
   }
   .body_layout {
@@ -30,10 +147,58 @@
         padding-bottom: 1.5rem;
       }
       ul {
+        padding-left: 8rem;
+        li {
+          list-style: none;
+          line-height: 2.2rem;
+          font-size: 1.2rem;
+          &::before {
+            content: "\2022";
+            color: $primarycolor;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cloud_service_solutions {
+  margin: 0 0 3rem;
+
+  .head {
+    padding: 1rem 0 2rem;
+    h1 {
+      background-color: #89a2f8;
+      color: #020b29;
+      padding: 1rem 2rem;
+      display: inline;
+      box-shadow: 5px 5px 30px -10px;
+    }
+  }
+  .body_layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-items: flex-start;
+    .iteams {
+      padding-top: 2rem;
+      h1 {
+        color: $primarycolor;
+        font-size: 1.6rem;
+        font-weight: 800;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+      ul {
         padding-left: 5rem;
         li {
           list-style: none;
-          line-height: 2.5rem;
+          line-height: 2.2rem;
           font-size: 1.2rem;
           &::before {
             content: "\2022";
@@ -52,6 +217,201 @@
           &::before {
             display: none;
           }
+        }
+      }
+    }
+  }
+}
+
+.data_engineer_solution {
+  margin: 0 0 3rem;
+  .head {
+    padding: 1rem 0 2rem;
+    h1 {
+      background-color: #89a2f8;
+      color: #020b29;
+      padding: 1rem 2rem;
+      display: inline;
+      box-shadow: 5px 5px 30px -10px;
+    }
+  }
+  .body_layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    justify-items: flex-start;
+    .iteams {
+      padding-top: 2rem;
+      h1 {
+        color: $primarycolor;
+        font-size: 1.6rem;
+        font-weight: 800;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+      ul {
+        padding-left: 5rem;
+        li {
+          list-style: none;
+          line-height: 2.2rem;
+          font-size: 1.2rem;
+          &::before {
+            content: "\2022";
+            color: $primarycolor;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
+      .socila-media {
+        li {
+          padding-right: 3rem;
+          display: inline;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.engagement_partner {
+  margin: 0 0 3rem;
+  .head {
+    padding: 1rem 0 2rem;
+    h1 {
+      background-color: #89a2f8;
+      color: #020b29;
+      padding: 1rem 2rem;
+      display: inline;
+      box-shadow: 5px 5px 30px -10px;
+    }
+  }
+  .body_layout {
+    padding-top: 6rem;
+    ul {
+      padding-left: 10rem;
+      .prnt_li {
+        color: $primarycolor;
+      }
+      .child_li {
+        color: #fff;
+      }
+      li {
+        list-style: none;
+        line-height: 2.2rem;
+        font-size: 1.2rem;
+        &::before {
+          content: "\2022";
+          color: $primarycolor;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}
+
+.why_sankir {
+  margin: 0 0 3rem;
+  .head {
+    padding: 1rem 0 2rem;
+    h1 {
+      background-color: #89a2f8;
+      color: #020b29;
+      padding: 1rem 2rem;
+      display: inline;
+      box-shadow: 5px 5px 30px -10px;
+    }
+  }
+  .body_layout {
+    padding-top: 6rem;
+    .data_solve {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 0 2rem;
+      column-gap: 1rem;
+
+      h4 {
+        font-size: 1.5rem;
+        color: $primarycolor;
+      }
+    }
+    ul {
+      padding-left: 10rem;
+      .prnt_li {
+        color: $primarycolor;
+      }
+      .child_li {
+        color: #fff;
+      }
+      li {
+        list-style: none;
+        line-height: 2.2rem;
+        font-size: 1.2rem;
+        &::before {
+          content: "\2022";
+          color: $primarycolor;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}
+
+.proof {
+  margin: 0 0 3rem;
+  .container {
+    padding-bottom: 8rem;
+  }
+  .head {
+    padding: 1rem 0 2rem;
+    h1 {
+      background-color: #89a2f8;
+      color: #020b29;
+      padding: 1rem 2rem;
+      display: inline;
+      box-shadow: 5px 5px 30px -10px;
+    }
+  }
+  .body_layout {
+    padding-top: 6rem;
+    h4 {
+      font-style: italic;
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-align: center;
+    }
+    ul {
+      padding-left: 10rem;
+      .prnt_li {
+        color: $primarycolor;
+      }
+      .child_li {
+        color: #fff;
+      }
+      li {
+        list-style: none;
+        line-height: 2.2rem;
+        font-size: 1.2rem;
+        &::before {
+          content: "\2022";
+          color: $primarycolor;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
         }
       }
     }
