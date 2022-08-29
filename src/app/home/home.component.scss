@@ -1,23 +1,72 @@
 @import "../../veriable.scss";
-
-.cloud {
-  margin: 0 0 3rem;
+@import "../../mixin.scss";
+nav {
+  border-bottom: 5px solid $primary-text-color;
+  background-color: $nav-background;
   .heading {
     display: flex;
-    justify-content: flex-start;
-    padding: 2rem 0 5rem;
-    column-gap: 11rem;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+
     h1 {
-      color: rgb(3, 16, 61);
-      background-color: #89a2f8;
+      color: $white-text-color;
+      background-color: $backgroundbox-color;
       padding: 0.2rem 1rem;
     }
     h2 {
+      color: $white-text-color;
       span {
-        color: $primarycolor;
+        color: $primary-text-color;
       }
     }
+    ul {
+      li {
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+        a {
+          color: $primary-text-color;
+          font-size: 1rem;
+        }
+        ul {
+          background: $primary-text-color;
+          visibility: hidden;
+          opacity: 0;
+          width: 200%;
+          position: absolute;
+          transition: all 0.5s ease;
+          margin-top: 1rem;
+          display: none;
+          padding: 1rem 0;
+          li {
+            display: block;
+            line-height: 1rem;
+            padding: 1rem;
+            a {
+              color: $white-text-color;
+            }
+            &:hover {
+              background-color: $background-color-second;
+            }
+          }
+        }
+      }
+    }
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
   }
+}
+.cloud {
+  padding: 3rem 5rem 5rem;
+  background-color: $backgroundcolor;
   .body_layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,11 +80,7 @@
         justify-content: flex-start;
         column-gap: 1rem;
 
-        h1 {
-          color: $primarycolor;
-          font-size: 1.7rem;
-          font-weight: 500;
-        }
+        @include h1_group;
       }
 
       .iteam {
@@ -47,11 +92,7 @@
         align-items: center;
         justify-content: flex-start;
         column-gap: 1rem;
-        h1 {
-          color: $primarycolor;
-          font-size: 1.7rem;
-          font-weight: 500;
-        }
+        @include h1_group;
       }
       .domain-name {
         display: flex;
@@ -60,7 +101,7 @@
         column-gap: 3rem;
         padding-top: 6rem;
         h1 {
-          color: $primarycolor;
+          color: $primary-text-color;
           font-size: 1.7rem;
           font-weight: 500;
           padding-bottom: 1.5rem;
@@ -81,14 +122,9 @@
           list-style: none;
           line-height: 2.2rem;
           font-size: 1.2rem;
-          &::before {
-            content: "\2022";
-            color: $primarycolor;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-          }
+          padding-bottom: 1rem;
+          color: $white-text-color;
+          @include boolet;
         }
       }
       .socila-media {
@@ -110,18 +146,9 @@
 }
 
 .Architecture {
-  margin: 0 0 3rem;
+  padding: 3rem 5rem 5rem;
   .head {
-    padding: 1rem;
-    text-align: end;
-    h1 {
-      padding: 1rem 3rem;
-      background-color: #013bf8;
-      color: $primarycolor;
-      display: inline;
-      font-size: 2.2rem;
-      box-shadow: 5px 5px 30px -10px #000;
-    }
+    @include head;
   }
   .ul-head {
     display: flex;
@@ -132,6 +159,7 @@
     h1 {
       font-size: 2rem;
       font-weight: 500;
+      color: $primary-text-color;
     }
   }
   .body_layout {
@@ -141,7 +169,7 @@
     justify-items: flex-start;
     .iteams {
       h1 {
-        color: $primarycolor;
+        color: $primary-text-color;
         font-size: 1.6rem;
         font-weight: 500;
         padding-bottom: 1.5rem;
@@ -150,16 +178,11 @@
         padding-left: 8rem;
         li {
           list-style: none;
-          line-height: 2.2rem;
+          line-height: 2.4rem;
           font-size: 1.2rem;
-          &::before {
-            content: "\2022";
-            color: $primarycolor;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-          }
+          padding-bottom: 0.7rem;
+          color: $white-text-color;
+          @include boolet;
         }
       }
     }
@@ -167,17 +190,10 @@
 }
 
 .cloud_service_solutions {
-  margin: 0 0 3rem;
-
+  padding: 3rem 5rem 5rem;
+  background-color: $backgroundcolor;
   .head {
-    padding: 1rem 0 2rem;
-    h1 {
-      background-color: #89a2f8;
-      color: #020b29;
-      padding: 1rem 2rem;
-      display: inline;
-      box-shadow: 5px 5px 30px -10px;
-    }
+    @include head;
   }
   .body_layout {
     display: grid;
@@ -187,7 +203,7 @@
     .iteams {
       padding-top: 2rem;
       h1 {
-        color: $primarycolor;
+        color: $primary-text-color;
         font-size: 1.6rem;
         font-weight: 800;
         padding-bottom: 1.5rem;
@@ -195,20 +211,7 @@
         letter-spacing: 1px;
       }
       ul {
-        padding-left: 5rem;
-        li {
-          list-style: none;
-          line-height: 2.2rem;
-          font-size: 1.2rem;
-          &::before {
-            content: "\2022";
-            color: $primarycolor;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-          }
-        }
+        @include list;
       }
       .socila-media {
         li {
@@ -224,16 +227,9 @@
 }
 
 .data_engineer_solution {
-  margin: 0 0 3rem;
+  padding: 3rem 5rem 5rem;
   .head {
-    padding: 1rem 0 2rem;
-    h1 {
-      background-color: #89a2f8;
-      color: #020b29;
-      padding: 1rem 2rem;
-      display: inline;
-      box-shadow: 5px 5px 30px -10px;
-    }
+    @include head;
   }
   .body_layout {
     display: grid;
@@ -243,7 +239,7 @@
     .iteams {
       padding-top: 2rem;
       h1 {
-        color: $primarycolor;
+        color: $primary-text-color;
         font-size: 1.6rem;
         font-weight: 800;
         padding-bottom: 1.5rem;
@@ -251,84 +247,30 @@
         letter-spacing: 1px;
       }
       ul {
-        padding-left: 5rem;
-        li {
-          list-style: none;
-          line-height: 2.2rem;
-          font-size: 1.2rem;
-          &::before {
-            content: "\2022";
-            color: $primarycolor;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-          }
-        }
-      }
-      .socila-media {
-        li {
-          padding-right: 3rem;
-          display: inline;
-          &::before {
-            display: none;
-          }
-        }
+        @include list;
       }
     }
   }
 }
 
 .engagement_partner {
-  margin: 0 0 3rem;
+  padding: 3rem 5rem 5rem;
+  background-color: $backgroundcolor;
   .head {
-    padding: 1rem 0 2rem;
-    h1 {
-      background-color: #89a2f8;
-      color: #020b29;
-      padding: 1rem 2rem;
-      display: inline;
-      box-shadow: 5px 5px 30px -10px;
-    }
+    @include head;
   }
   .body_layout {
     padding-top: 6rem;
     ul {
-      padding-left: 10rem;
-      .prnt_li {
-        color: $primarycolor;
-      }
-      .child_li {
-        color: #fff;
-      }
-      li {
-        list-style: none;
-        line-height: 2.2rem;
-        font-size: 1.2rem;
-        &::before {
-          content: "\2022";
-          color: $primarycolor;
-          font-weight: bold;
-          display: inline-block;
-          width: 1em;
-          margin-left: -1em;
-        }
-      }
+      @include list;
     }
   }
 }
 
 .why_sankir {
-  margin: 0 0 3rem;
+  padding: 3rem 5rem 5rem;
   .head {
-    padding: 1rem 0 2rem;
-    h1 {
-      background-color: #89a2f8;
-      color: #020b29;
-      padding: 1rem 2rem;
-      display: inline;
-      box-shadow: 5px 5px 30px -10px;
-    }
+    @include head;
   }
   .body_layout {
     padding-top: 6rem;
@@ -337,53 +279,26 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 5rem 0 2rem;
+      padding: 5rem 0 0;
       column-gap: 1rem;
 
       h4 {
         font-size: 1.5rem;
-        color: $primarycolor;
+        color: $primary-text-color;
       }
     }
     ul {
-      padding-left: 10rem;
-      .prnt_li {
-        color: $primarycolor;
-      }
-      .child_li {
-        color: #fff;
-      }
-      li {
-        list-style: none;
-        line-height: 2.2rem;
-        font-size: 1.2rem;
-        &::before {
-          content: "\2022";
-          color: $primarycolor;
-          font-weight: bold;
-          display: inline-block;
-          width: 1em;
-          margin-left: -1em;
-        }
-      }
+      padding-left: 5rem;
+      @include list;
     }
   }
 }
 
 .proof {
-  margin: 0 0 3rem;
-  .container {
-    padding-bottom: 8rem;
-  }
+  padding: 3rem 5rem 5rem;
+  background-color: $backgroundcolor;
   .head {
-    padding: 1rem 0 2rem;
-    h1 {
-      background-color: #89a2f8;
-      color: #020b29;
-      padding: 1rem 2rem;
-      display: inline;
-      box-shadow: 5px 5px 30px -10px;
-    }
+    @include head;
   }
   .body_layout {
     padding-top: 6rem;
@@ -392,28 +307,10 @@
       font-size: 1.2rem;
       font-weight: 400;
       text-align: center;
+      color: $white-text-color;
     }
     ul {
-      padding-left: 10rem;
-      .prnt_li {
-        color: $primarycolor;
-      }
-      .child_li {
-        color: #fff;
-      }
-      li {
-        list-style: none;
-        line-height: 2.2rem;
-        font-size: 1.2rem;
-        &::before {
-          content: "\2022";
-          color: $primarycolor;
-          font-weight: bold;
-          display: inline-block;
-          width: 1em;
-          margin-left: -1em;
-        }
-      }
+      @include list;
     }
   }
 }

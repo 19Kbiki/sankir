@@ -1,0 +1,39 @@
+@mixin boolet {
+  &::before {
+    content: "\2022";
+    color: $primary-text-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}
+@mixin h1_group {
+  h1 {
+    color: $primary-text-color;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}
+
+@mixin head {
+  padding: 1rem;
+  text-align: center;
+  h1 {
+    padding: 1rem 5rem;
+    color: $white-text-color;
+    display: inline;
+    font-size: 2.2rem;
+  }
+}
+
+@mixin list {
+  padding-left: 5rem;
+  li {
+    list-style: none;
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+    color: $white-text-color;
+    @include boolet;
+  }
+}
