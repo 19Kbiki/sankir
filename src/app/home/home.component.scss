@@ -1,8 +1,8 @@
 @import "../../veriable.scss";
 @import "../../mixin.scss";
 nav {
-  border-bottom: 5px solid $primary-text-color;
   background-color: $nav-background;
+  border-bottom: 3px solid $primary-text-color;
   .heading {
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@ nav {
     align-items: center;
 
     h1 {
-      color: $white-text-color;
+      color: #fff;
       background-color: $backgroundbox-color;
       padding: 0.2rem 1rem;
     }
@@ -29,7 +29,7 @@ nav {
         text-decoration: none;
         transition-duration: 0.5s;
         a {
-          color: $primary-text-color;
+          color: $li-color;
           font-size: 1rem;
         }
         ul {
@@ -47,10 +47,13 @@ nav {
             line-height: 1rem;
             padding: 1rem;
             a {
-              color: $white-text-color;
+              color: #fff;
+            }
+            &:hover a {
+              color: $li-color;
             }
             &:hover {
-              background-color: $background-color-second;
+              background-color: #fff;
             }
           }
         }
@@ -65,8 +68,8 @@ nav {
   }
 }
 .cloud {
-  padding: 3rem 5rem 5rem;
-  background-color: $backgroundcolor;
+  padding: 8rem 5rem 8rem;
+  background-color: rgba(214, 238, 252, 0.568);
   .body_layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -99,7 +102,7 @@ nav {
         align-items: center;
         justify-content: flex-start;
         column-gap: 3rem;
-        padding-top: 6rem;
+        padding-top: 0rem;
         h1 {
           color: $primary-text-color;
           font-size: 1.7rem;
@@ -175,15 +178,7 @@ nav {
         padding-bottom: 1.5rem;
       }
       ul {
-        padding-left: 8rem;
-        li {
-          list-style: none;
-          line-height: 2.4rem;
-          font-size: 1.2rem;
-          padding-bottom: 0.7rem;
-          color: $white-text-color;
-          @include boolet;
-        }
+        @include list;
       }
     }
   }
