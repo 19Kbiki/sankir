@@ -1,0 +1,74 @@
+@import "../../veriable.scss";
+@import "../../mixin.scss";
+nav {
+  // border-bottom: 3px solid $primary-text-color;
+  background-color: #002c96;
+  position: relative;
+  z-index: 2;
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+
+    h1 {
+      color: #fff;
+
+      padding: 0.2rem 1rem;
+      font-size: 1.8rem;
+    }
+    h2 {
+      color: #fff;
+      font-size: 1.6rem;
+      span {
+        color: #a8d457;
+      }
+    }
+    ul {
+      li {
+        list-style: none;
+        display: inline;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+        a {
+          color: #fff;
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+        ul {
+          background: $primary-text-color;
+          visibility: hidden;
+          opacity: 0;
+          width: 200%;
+          position: absolute;
+          transition: all 0.5s ease;
+          margin-top: 1rem;
+          display: none;
+          padding: 1rem 0;
+          li {
+            display: block;
+            line-height: 1rem;
+            padding: 1rem;
+            a {
+              color: #fff;
+            }
+            &:hover a {
+              color: $li-color;
+            }
+            &:hover {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
+  }
+}

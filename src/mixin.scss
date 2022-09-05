@@ -18,23 +18,24 @@
 }
 
 @mixin head {
-  padding: 1rem;
-  text-align: center;
-  margin-bottom: 3rem;
+  padding-bottom: 4rem;
   h1 {
-    padding: 1rem 5rem;
-    color: $white-text-color;
-    display: inline;
-    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #3d3d3d;
+    letter-spacing: 0;
+    text-align: center;
   }
 }
 
 @mixin list {
-  padding-left: 5rem;
+  padding-left: 2rem;
   li {
     list-style: none;
     line-height: 2.2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: $li-color;
     @include boolet;
   }
