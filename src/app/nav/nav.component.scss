@@ -2,7 +2,7 @@
 @import "../../mixin.scss";
 nav {
   // border-bottom: 3px solid $primary-text-color;
-  background-color: #002c96;
+  background-color: #262f75;
   position: relative;
   z-index: 2;
   .heading {
@@ -12,10 +12,11 @@ nav {
     align-items: center;
 
     h1 {
-      color: #fff;
-
-      padding: 0.2rem 1rem;
-      font-size: 1.8rem;
+      a {
+        color: #fff;
+        padding: 0.2rem 1rem;
+        font-size: 1.8rem;
+      }
     }
     h2 {
       color: #fff;

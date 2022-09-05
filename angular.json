@@ -27,7 +27,11 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -97,5 +101,7 @@
       }
     }
   },
-  "defaultProject": "sankir"
+  "cli": {
+    "analytics": "1da4735e-966b-4993-baaf-cbfbf68ea626"
+  }
 }
