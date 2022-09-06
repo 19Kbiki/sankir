@@ -8,6 +8,7 @@ import { WhyComponent } from './why/why.component';
 import { PocComponent } from './poc/poc.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
     PocComponent,
     NavComponent,
     FooterComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CarouselModule],
   providers: [],

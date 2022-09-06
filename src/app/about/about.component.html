@@ -1,0 +1,23 @@
+<section class="about">
+  <div class="head">
+    <h1>About us</h1>
+  </div>
+  <div class="container">
+    <div class="body_layout">
+      <div class="about_wrap" *ngFor="let about of aboutsList">
+        <h1>{{ about.parentList }}</h1>
+        <h3>{{ about.samiParentList }}</h3>
+        <ul *ngFor="let child of about.childLists">
+          <li>
+            {{ child.childList }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about_body" *ngFor="let info of selfInfo">
+      <h1>{{ info.name }}</h1>
+      <h1>{{ info.experince }}</h1>
+    </div>
+  </div>
+</section>

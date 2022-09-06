@@ -1,0 +1,37 @@
+.about {
+  background-color: #fff;
+  .head {
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      text-align: center;
+      padding: 3rem 0;
+      color: #fff;
+      letter-spacing: 0.5px;
+      background: linear-gradient(120deg, #0984e3 0%, #003bb1 100%);
+    }
+  }
+  .body_layout {
+    padding: 2rem 0;
+    .about_wrap {
+      h1 {
+        font-size: 1rem;
+        font-style: italic;
+        padding-bottom: 1rem;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+      }
+      h3 {
+        font-size: 1rem;
+        font-style: normal;
+        padding-bottom: 2rem;
+      }
+      ul {
+        padding-left: 3rem;
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
