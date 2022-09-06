@@ -77,16 +77,7 @@
     border-top-right-radius: 200px;
 
     .head {
-      padding-bottom: 4rem;
-      h1 {
-        font-family: "Poppins", sans-serif;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 400;
-        color: #3d3d3d;
-        letter-spacing: 0;
-        text-align: center;
-      }
+      @include head;
     }
 
     .body_layout {
