@@ -1,12 +1,11 @@
 @import "../../veriable.scss";
 @import "../../mixin.scss";
+
+// ========================== Banner Start ========================== //
 .banner {
-  // background-color: #000;
   .carousel-item {
-    background-color: #262f75;
-    // background-color: rgb(119, 198, 243);
+    background-color: $primary-background-color;
     padding: 25rem;
-    // border-bottom-right-radius: 200px;
     .carousel-caption {
       background: linear-gradient(
         130.76deg,
@@ -63,10 +62,14 @@
     }
   }
 }
+// ========================== Banner End ========================== //
 
+// ========================== Hero_wrap Start ========================== //
 .hero_wrap {
-  background-color: #262f75;
+  background-color: $primary-background-color;
   border-bottom-right-radius: 200px;
+
+  // ======= Architecture Start ======= //
   .Architecture {
     padding: 3rem 5rem 5rem;
     background-color: #fff;
@@ -114,6 +117,9 @@
       }
     }
   }
+  // ======= Architecture End ======= //
+
+  // ======= Client Start ======= //
   .clients {
     padding: 5rem;
 
@@ -132,7 +138,7 @@
     .body_layout {
       .heads {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 2fr 1fr 0.5fr;
         justify-items: center;
         background-color: #000c66;
         padding: 2rem 1rem;
@@ -140,51 +146,53 @@
 
         h1 {
           font-size: 1.2rem;
+
           color: #fff;
         }
       }
       .body_info {
+        background-color: #fff;
         .items {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: 1fr 2fr 1fr 0.5fr;
           justify-items: center;
           column-gap: 2rem;
           padding: 2rem 1rem;
           background-color: #ffffff;
           img {
             width: 100%;
-            height: 150px;
+            height: 100px;
           }
           h1 {
             font-size: 1.2rem;
-            line-height: 2rem;
+            line-height: 1.8rem;
+          }
+          ul {
+            li {
+              font-size: 0.9rem;
+              line-height: 1.5rem;
+            }
           }
         }
         .items:nth-child(even) {
-          background-color: #7ec8e3;
+          background-color: #262f753a;
         }
       }
     }
   }
 }
+// ======= Client End ======= //
+// ========================== Hero_wrap end ========================== //
 
+// ========================== Cloud_service Start ========================== //
 .cloud_service_solutions {
   padding: 3rem 5rem 5rem;
-  background-color: $backgroundcolor;
+  background-color: $primary-color-white;
   border-bottom-right-radius: 200px;
   border-top-left-radius: 200px;
 
   .head {
-    padding-bottom: 2rem;
-    h1 {
-      font-family: "Poppins", sans-serif;
-      margin-top: 0;
-      margin-bottom: 0;
-      font-weight: 400;
-      color: #3d3d3d;
-      letter-spacing: 0;
-      text-align: center;
-    }
+    @include head;
   }
   .body_layout {
     display: grid;
@@ -192,7 +200,7 @@
     align-items: stretch;
     justify-items: flex-start;
     column-gap: 2rem;
-    .iteams {
+    .itames {
       padding-top: 2rem;
       width: 100%;
       .card {
@@ -200,41 +208,20 @@
         border: none;
         box-shadow: 0 0 10px rgb(0 0 0 / 10%);
         .heads {
-          background-color: #000c66;
-          padding: 2rem;
-          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-
-          h1 {
-            color: $nav-background;
-            font-size: 1.6rem;
-            font-weight: 800;
-            text-align: center;
-            letter-spacing: 1px;
-          }
+          @include card_head;
         }
         .card-body {
           ul {
-            padding-left: 2rem;
-            li {
-              font-size: 1.1rem;
-              list-style: none;
-              line-height: 2rem;
-              &::before {
-                content: "\2022";
-                color: $primary-text-color;
-                font-weight: bold;
-                display: inline-block;
-                width: 1em;
-                margin-left: -1em;
-              }
-            }
+            @include card_list;
           }
         }
       }
     }
   }
 }
+// ========================== Cloud_service End ========================== //
 
+//  ========================== Data_service Start ========================== //
 .data_engineer_solution {
   padding: 3rem 5rem 5rem;
   .head {
@@ -257,69 +244,16 @@
         overflow: hidden;
         border-radius: 0;
         .heads {
-          background-color: #000c66;
-          padding: 2rem;
-          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-
-          h1 {
-            color: $nav-background;
-            font-size: 1.6rem;
-            font-weight: 800;
-            text-align: center;
-            letter-spacing: 1px;
-          }
+          @include card_head;
         }
         .card-body {
           overflow-y: scroll;
           ul {
-            padding-left: 2rem;
-            li {
-              font-size: 1.1rem;
-              list-style: none;
-              line-height: 2rem;
-              &::before {
-                content: "\2022";
-                color: $primary-text-color;
-                font-weight: bold;
-                display: inline-block;
-                width: 1em;
-                margin-left: -1em;
-              }
-            }
+            @include card_list;
           }
         }
       }
     }
   }
 }
-
-.engagement_partner {
-  padding: 3rem 5rem 5rem;
-  background-color: $backgroundcolor;
-  .head {
-    @include head;
-  }
-  .body_layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: stretch;
-    justify-items: center;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    .items {
-      width: 100%;
-      .card {
-        height: 100%;
-        h1 {
-          font-size: 1.2rem;
-          text-align: center;
-          padding: 1rem;
-        }
-        p {
-          font-size: 0.8rem;
-          padding: 2rem;
-        }
-      }
-    }
-  }
-}
+//  ========================== Data_service ENd ========================== //

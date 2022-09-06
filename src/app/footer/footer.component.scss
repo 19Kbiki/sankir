@@ -1,8 +1,8 @@
 @import "../../veriable.scss";
 @import "../../mixin.scss";
 footer {
-  padding: 5rem 0;
-  background-color: #050a30;
+  padding: 5rem 0 3rem;
+  background-color: $footer-color;
   color: #fff;
   .footer_body {
     display: grid;
@@ -42,6 +42,16 @@ footer {
           }
         }
       }
+    }
+  }
+  .footer_bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.473);
+    h1 {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.39);
     }
   }
 }

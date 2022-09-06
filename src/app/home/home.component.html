@@ -112,51 +112,24 @@
       <div class="head">
         <h1>Consultancy - Expertise in Data Engineering on Cloud</h1>
       </div>
-
       <div class="body_layout">
         <div class="items">
-          <h1>Solution Architecture</h1>
-          <ul>
+          <h1>{{ ArchiName }}</h1>
+          <ul *ngFor="let info of ulInfo">
             <li>
-              Architecting the Data Pipeline on Cloud
+              {{ info.groupName }}
               <ul>
-                <li>Multiple Solution options for a data problem</li>
+                <li *ngFor="let child of info.childInfo">{{ child.name }}</li>
               </ul>
             </li>
-            <li>
-              End-to-End DE Automation using AWS CDK Toolkit and Terraform
-            </li>
-            <li>
-              Data Engineering Tools and Solution on Cloud
-              <ul>
-                <li>Optimizing the Data processing</li>
-                <li>Best Practices in data & network security</li>
-                <li>
-                  Spark Cluster-Sizing and Optimization for better performance
-                  of workloads
-                </li>
-              </ul>
-            </li>
-            <li>
-              Leverage SanKir AWS/Azure/GCP Cloud Infrastructure to quickly test
-              the solution
-            </li>
-            <li>
-              SanKir can Work with Client’s CxO, Technical Managers or
-              Engineering team to solve the organizational Data problems
-            </li>
-            <li>SanKir aims to align with Client’s Core Business Objectives</li>
           </ul>
         </div>
         <div class="items">
-          <h1>Leverage SanKir Services in</h1>
-          <ul>
-            <li>Cloud Services and Solution</li>
-            <li>Data Engineering Tools and Solution</li>
-            <li>CI/CD – DevOps</li>
-            <li>Container Orchestration using Docker and Kubernetes</li>
-            <li>Streaming using Spark streaming and Kafka</li>
-            <li>API development using Golang</li>
+          <h1>{{ leveName }}</h1>
+          <ul *ngFor="let service of Services">
+            <li>
+              {{ service.name }}
+            </li>
           </ul>
         </div>
       </div>
@@ -184,138 +157,17 @@
             <h1>Documentation</h1>
           </div>
         </div>
+
         <div class="body_info">
-          <div class="items">
-            <h1>Retail data transformation using Spark, S3, AWS EMR, Athena</h1>
+          <div class="items" *ngFor="let client of clientTables">
+            <h1>{{ client.name }}</h1>
             <ul>
-              <li>
-                End-to-End DE Automation using AWS CDK Toolkit EC2 creation,
-                Airflow installation,
-              </li>
-              <li>EMR creation and Spark job submission</li>
-              <li>
-                Data Profiling – Column profile detail & Data quality metrics
+              <li *ngFor="let product of client.products">
+                {{ product.productsName }}
               </li>
             </ul>
-            <iframe
-              class="elementor-video"
-              frameborder="0"
-              allowfullscreen="1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              title="Video Placeholder"
-              width="250"
-              height="auto"
-              src="https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sankir.com&amp;widgetid=1"
-              id="widget2"
-              data-gtm-yt-inspected-8="true"
-            ></iframe>
-            <img
-              class="lazy loaded"
-              src="https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png"
-              data-src="https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png"
-              title=""
-              alt=""
-              data-was-processed="true"
-            />
-          </div>
-          <div class="items">
-            <h1>Retail data transformation using Spark, S3, AWS EMR, Athena</h1>
-            <ul>
-              <li>
-                End-to-End DE Automation using AWS CDK Toolkit EC2 creation,
-                Airflow installation,
-              </li>
-              <li>EMR creation and Spark job submission</li>
-              <li>
-                Data Profiling – Column profile detail & Data quality metrics
-              </li>
-            </ul>
-            <iframe
-              class="elementor-video"
-              frameborder="0"
-              allowfullscreen="1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              title="Video Placeholder"
-              width="250"
-              height="auto"
-              src="https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sankir.com&amp;widgetid=1"
-              id="widget2"
-              data-gtm-yt-inspected-8="true"
-            ></iframe>
-            <img
-              class="lazy loaded"
-              src="https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png"
-              data-src="https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png"
-              title=""
-              alt=""
-              data-was-processed="true"
-            />
-          </div>
-          <div class="items">
-            <h1>Retail data transformation using Spark, S3, AWS EMR, Athena</h1>
-            <ul>
-              <li>
-                End-to-End DE Automation using AWS CDK Toolkit EC2 creation,
-                Airflow installation,
-              </li>
-              <li>EMR creation and Spark job submission</li>
-              <li>
-                Data Profiling – Column profile detail & Data quality metrics
-              </li>
-            </ul>
-            <iframe
-              class="elementor-video"
-              frameborder="0"
-              allowfullscreen="1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              title="Video Placeholder"
-              width="250"
-              height="auto"
-              src="https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sankir.com&amp;widgetid=1"
-              id="widget2"
-              data-gtm-yt-inspected-8="true"
-            ></iframe>
-            <img
-              class="lazy loaded"
-              src="https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png"
-              data-src="https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png"
-              title=""
-              alt=""
-              data-was-processed="true"
-            />
-          </div>
-          <div class="items">
-            <h1>Retail data transformation using Spark, S3, AWS EMR, Athena</h1>
-            <ul>
-              <li>
-                End-to-End DE Automation using AWS CDK Toolkit EC2 creation,
-                Airflow installation,
-              </li>
-              <li>EMR creation and Spark job submission</li>
-              <li>
-                Data Profiling – Column profile detail & Data quality metrics
-              </li>
-            </ul>
-            <iframe
-              class="elementor-video"
-              frameborder="0"
-              allowfullscreen="1"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              title="Video Placeholder"
-              width="250"
-              height="auto"
-              src="https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sankir.com&amp;widgetid=1"
-              id="widget2"
-              data-gtm-yt-inspected-8="true"
-            ></iframe>
-            <img
-              class="lazy loaded"
-              src="https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png"
-              data-src="https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png"
-              title=""
-              alt=""
-              data-was-processed="true"
-            />
+            <iframe [src]="safeUrl(client.video)"></iframe>
+            <img [src]="client.image" />
           </div>
         </div>
       </div>
@@ -329,94 +181,59 @@
       <h1>Cloud Services and Solution</h1>
     </div>
     <div class="body_layout">
-      <div class="iteams">
+      <div class="itames">
         <div class="card">
           <div class="heads">
             <h1>AWS</h1>
           </div>
           <div class="card-body">
-            <ul>
-              <li>Amazon S3</li>
+            <ul *ngFor="let itame of awsItames">
               <li>
-                Spark Cluster – AWS EMR
+                {{ itame.prentList }}
                 <ul>
-                  <li>Cluster Sizing and Monitoring</li>
+                  <li *ngFor="let childItem of itame.childLists">
+                    {{ childItem.childList }}
+                  </li>
                 </ul>
               </li>
-              <li>Cloud DWH - RedShift/Athena</li>
-              <li>AWS SDK using Boto3</li>
-              <li>
-                Orchestration
-                <ul>
-                  <li>AWS Cloud Formation</li>
-                  <li>AWS Lambda</li>
-                  <li>CloudWatch</li>
-                </ul>
-              </li>
-              <li>IAM and VPC</li>
-              <li>Secrets Manager, KMS</li>
-              <li>RDS - PostgrSQL, MySQL</li>
-              <li>Apache Airflow/MWAA</li>
-              <li>Databricks on AWS</li>
-              <li>Snowflake on AWS</li>
-              <li>CodeBuild, CodeDeploy</li>
-              <li>AWS Cost Management</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="iteams">
+      <div class="itames">
         <div class="card">
           <div class="heads">
             <h1>Azure</h1>
           </div>
           <div class="card-body">
-            <ul>
-              <li>ADLS</li>
-              <li>Spark Cluster - Azure Databricks</li>
+            <ul *ngFor="let itame of azureItames">
               <li>
-                Cloud DWH
+                {{ itame.prentList }}
                 <ul>
-                  <li>Azure Synapse Analytics</li>
-                  <li>SQL Databases</li>
+                  <li *ngFor="let childItem of itame.childLists">
+                    {{ childItem.childList }}
+                  </li>
                 </ul>
               </li>
-              <li>ABFS(S)/WASB(S) - API to access ADLS</li>
-              <li>IAM</li>
-              <li>Access Keys</li>
-              <li>Shared Access Signature</li>
-              <li>Azure Key Vaults, Keys & Secrets</li>
-              <li>Service Principal</li>
-              <li>Azure Data Factory</li>
-              <li>Snowflake on Azure</li>
-              <li>Azure Active Directory (AAD)</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="iteams">
+      <div class="itames">
         <div class="card">
           <div class="heads">
-            <h1>Gcp</h1>
+            <h1>GCP</h1>
           </div>
           <div class="card-body">
-            <ul>
-              <li>Google Cloud Storage</li>
-              <li>Spark Cluster - Google Dataproc</li>
-              <li>Cloud DWH - Google BigQuery</li>
+            <ul *ngFor="let itame of gcpItames">
               <li>
-                Google Cloud SDK
+                {{ itame.prentList }}
                 <ul>
-                  <li>Google Cloud CLI</li>
-                  <li>cloud shell</li>
+                  <li *ngFor="let childItem of itame.childLists">
+                    {{ childItem.childList }}
+                  </li>
                 </ul>
               </li>
-              <li>IAM</li>
-              <li>Cloud Functions</li>
-              <li>Secret Manager</li>
-              <li>Cloud Run</li>
-              <li>Cloud Build</li>
-              <li>Terraform on GCP</li>
             </ul>
           </div>
         </div>
@@ -561,53 +378,3 @@
     </div>
   </div>
 </section>
-
-<!-- <section class="engagement_partner" id="engagement_partner">
-  <div class="container">
-    <div class="head">
-      <h1>SanKir as Engagement Partner for Business Opportunities</h1>
-    </div>
-    <div class="body_layout">
-      <div class="items">
-        <div class="card">
-          <h1>
-            Architecting the Solution for Client’s Potential Business
-            opportunities
-          </h1>
-          <p>
-            Recommendation on right choice of Cloud vendor, Data Pipeline Tools
-            and services and<br />Cloud Data Warehouse based on Client
-            requirements
-          </p>
-        </div>
-      </div>
-      <div class="items">
-        <div class="card">
-          <h1>Execute PoC to win a Project dea</h1>
-        </div>
-      </div>
-      <div class="items">
-        <div class="card">
-          <h1>
-            Customized technology upskill program for Corporate professionals
-          </h1>
-          <p>
-            Enable Client to showcase their team’s skills for resourcing
-            opportunities
-            <br />
-            Hans-on sessions with PoC project
-          </p>
-        </div>
-      </div>
-      <div class="items">
-        <div class="card">
-          <h1>Joint Go-To-Market Strategy</h1>
-          <p>
-            SanKir can partner with Client from initial bid stage to
-            Architecting the Solution to Project Execution
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->

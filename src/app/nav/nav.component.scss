@@ -2,7 +2,7 @@
 @import "../../mixin.scss";
 nav {
   // border-bottom: 3px solid $primary-text-color;
-  background-color: #262f75;
+  background-color: $primary-background-color;
   position: relative;
   z-index: 2;
   .heading {
@@ -39,7 +39,7 @@ nav {
           font-weight: 500;
         }
         ul {
-          background: $primary-text-color;
+          background: $primary-color-white;
           visibility: hidden;
           opacity: 0;
           width: 200%;
@@ -56,7 +56,7 @@ nav {
               color: #fff;
             }
             &:hover a {
-              color: $li-color;
+              color: $primary-color-white;
             }
             &:hover {
               background-color: #fff;
