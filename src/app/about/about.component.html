@@ -1,7 +1,10 @@
-<section class="about">
-  <div class="head">
-    <h1>About us</h1>
+<section class="banner">
+  <div class="container">
+    <h1>About Us</h1>
   </div>
+</section>
+
+<section class="about">
   <div class="container">
     <div class="body_layout">
       <div class="about_wrap" *ngFor="let about of aboutsList">
@@ -14,10 +17,63 @@
         </ul>
       </div>
     </div>
-
-    <div class="about_body" *ngFor="let info of selfInfo">
-      <h1>{{ info.name }}</h1>
-      <h1>{{ info.experince }}</h1>
-    </div>
   </div>
 </section>
+<div class="about_body">
+  <div class="container">
+    <div class="about_info">
+      <div class="kiran_about">
+        <div class="image">
+          <img
+            src="https://www.sankir.com/wp-content/uploads/2022/02/kiran_3c.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content" *ngFor="let info of selfInfo">
+          <div class="profile_link">
+            <h1>{{ info.name }}</h1>
+            <div class="social_media">
+              <a href="https://github.com/kiranhm1972">
+                <i class="fa fa-github"></i
+              ></a>
+
+              <a href="https://www.linkedin.com/in/hiremath-kiran/"
+                ><i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <h3>{{ info.experince }}</h3>
+          <ul *ngFor="let sub of info.subExperinces">
+            <li>{{ sub.subExperince }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="kiran_about">
+        <div class="image">
+          <img
+            src="https://www.sankir.com/wp-content/uploads/2022/02/sanjay_4d-150x150.png"
+            alt=""
+          />
+        </div>
+        <div class="content" *ngFor="let info of sanjayselfInfo">
+          <div class="profile_link">
+            <h1>{{ info.name }}</h1>
+            <div class="social_media">
+              <a href="https://github.com/kiranhm1972">
+                <i class="fa fa-github"></i
+              ></a>
+
+              <a href="https://www.linkedin.com/in/hiremath-kiran/"
+                ><i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <h3>{{ info.experince }}</h3>
+          <ul *ngFor="let sub of info.subExperinces">
+            <li>{{ sub.subExperince }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -116,12 +116,7 @@
         <div class="items">
           <h1>{{ ArchiName }}</h1>
           <ul *ngFor="let info of ulInfo">
-            <li>
-              {{ info.groupName }}
-              <ul>
-                <li *ngFor="let child of info.childInfo">{{ child.name }}</li>
-              </ul>
-            </li>
+            <li>{{ info }}</li>
           </ul>
         </div>
         <div class="items">

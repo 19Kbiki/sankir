@@ -12,47 +12,14 @@ export class HomeComponent implements OnInit {
   // hero_wrap array
   ArchiName = 'Solution Architecture';
   ulInfo = [
-    {
-      groupName: 'Architecting the Data Pipeline on Cloud',
-      childInfo: [
-        {
-          name: 'Multiple Solution options for a data problem',
-        },
-      ],
-    },
-
-    {
-      groupName: 'End-to-End DE Automation using AWS CDK Toolkit and Terraform',
-    },
-
-    {
-      groupName: ' Data Engineering Tools and Solution on Cloud',
-      childInfo: [
-        {
-          name: 'Optimizing the Data processing',
-        },
-        {
-          name: 'Best Practices in data & network security',
-        },
-        {
-          name: 'Spark Cluster-Sizing and Optimization for better performance of workloads',
-        },
-      ],
-    },
-
-    {
-      groupName:
-        'Leverage SanKir AWS/Azure/GCP Cloud Infrastructure to quickly test the solution',
-    },
-
-    {
-      groupName:
-        'SanKir can Work with Client’s CxO, Technical Managers or Engineering team to solve the organizational Data problems',
-    },
-
-    {
-      groupName: 'SanKir aims to align with Client’s Core Business Objectives',
-    },
+    'Design the Data Pipeline on Cloud',
+    'Multiple Solution proposals for one data problem',
+    'E2E Data Engineering Automation using Infrastructure as a Code (AWS CDK and Terraform)',
+    'Optimize the Data processing Pipelines',
+    'Recommend Best Practices for data & network security',
+    'Cluster Sizing and Optimization for better performance of workloads',
+    'Work with Client’s CxO, Technical Managers or Engineering team to solve the organizational Data problems',
+    'Aims to align with Client’s Core Business Objectives',
   ];
   // Architecture arry end
 
