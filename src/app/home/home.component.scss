@@ -3,6 +3,12 @@
 
 // ========================== Banner Start ========================== //
 .banner {
+  .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+  }
   .carousel-item {
     background-color: $primary-background-color;
     padding: 25rem;
@@ -113,7 +119,6 @@
   // ======= Client Start ======= //
   .clients {
     padding: 5rem;
-
     .head {
       padding-bottom: 4rem;
       h1 {
@@ -146,7 +151,7 @@
         .items {
           display: grid;
           grid-template-columns: 1fr 2fr 1fr 0.5fr;
-          justify-items: center;
+          justify-items: flex-start;
           column-gap: 2rem;
           padding: 2rem 1rem;
           background-color: #ffffff;
@@ -234,6 +239,9 @@
         height: 600px;
         overflow: hidden;
         border-radius: 0;
+        border: none;
+        box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+
         .heads {
           @include card_head;
         }
@@ -248,3 +256,449 @@
   }
 }
 //  ========================== Data_service ENd ========================== //
+
+// Responsive Start
+@media screen and (max-width: 991px) {
+  // ========================== Banner Start ========================== //
+  .banner {
+    .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+      margin: 0 0.2rem;
+    }
+    .carousel-item {
+      padding: 15rem;
+      .carousel-caption {
+        padding: 2rem 0;
+        .info {
+          column-gap: 2rem;
+          h5 {
+            font-size: 2rem;
+            padding-left: 3rem;
+          }
+          .pra {
+            padding-left: 3rem;
+            h5 {
+              font-size: 2rem;
+            }
+            ul {
+              li {
+                font-size: 0.8rem;
+              }
+            }
+          }
+          img {
+            width: 50%;
+          }
+          .wrap {
+            h5 {
+              font-size: 2rem;
+
+              padding-left: 3rem;
+            }
+            ul {
+              padding-left: 4rem;
+              li {
+                font-size: 0.8rem;
+                line-height: 1rem;
+              }
+              ul {
+                padding-left: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ========================== Banner End ========================== //
+
+  // ========================== Hero_wrap Start ========================== //
+  .hero_wrap {
+    background-color: $primary-background-color;
+    border-bottom-right-radius: 200px;
+
+    // ======= Architecture Start ======= //
+    .Architecture {
+      border-bottom-left-radius: 100px;
+      border-top-right-radius: 100px;
+      padding: 3rem 0;
+      .head {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+
+      .body_layout {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+        justify-items: flex-start;
+        column-gap: 1rem;
+        .items {
+          width: 100%;
+          background-color: #000c66;
+          padding: 2rem;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          h1 {
+            font-size: 1.3rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            color: #fff;
+          }
+          ul {
+            padding-left: 1rem;
+            li {
+              color: #fff;
+              line-height: 1.2rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+    // ======= Architecture End ======= //
+
+    // ======= Client Start ======= //
+    .clients {
+      padding: 3rem 0;
+      .head {
+        padding-bottom: 2rem;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .body_layout {
+        .heads {
+          grid-template-columns: repeat(4, 1fr);
+          h1 {
+            font-size: 1.1rem;
+            color: #fff;
+          }
+        }
+        .body_info {
+          background-color: #fff;
+          .items {
+            grid-template-columns: repeat(4, 1fr);
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            iframe {
+              width: 100%;
+              text-align: center;
+            }
+            h1 {
+              font-size: 1rem;
+              line-height: 1.4rem;
+            }
+            ul {
+              li {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+              }
+            }
+          }
+          .items:nth-child(even) {
+            background-color: #262f753a;
+          }
+        }
+      }
+    }
+  }
+  // ======= Client End ======= //
+  // ========================== Hero_wrap end ========================== //
+
+  // ========================== Cloud_service Start ========================== //
+  .cloud_service_solutions {
+    padding: 3rem 5rem 5rem;
+    background-color: $primary-color-white;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
+
+    .head {
+      @include head;
+    }
+    .body_layout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
+      justify-items: flex-start;
+      column-gap: 2rem;
+      .itames {
+        padding-top: 2rem;
+        width: 100%;
+        .card {
+          height: 100%;
+          border: none;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          .heads {
+            @include card_head;
+          }
+          .card-body {
+            ul {
+              @include card_list;
+            }
+          }
+        }
+      }
+    }
+  }
+  // ========================== Cloud_service End ========================== //
+}
+@media screen and (max-width: 600px) {
+  // ========================== Banner Start ========================== //
+  .banner {
+    .carousel-indicators [data-bs-target] {
+      width: 10px;
+      height: 10px;
+      margin: 0 0.2rem;
+    }
+    .carousel-item {
+      padding: 10rem 0;
+      .carousel-caption {
+        padding: 2rem 0;
+        width: 100%;
+        position: absolute;
+        top: 39px;
+        left: 16px;
+        .info {
+          column-gap: 0rem;
+          row-gap: 1rem;
+          flex-direction: column-reverse;
+          justify-content: flex-start;
+          h5 {
+            font-size: 1.5rem;
+            padding-left: 3rem;
+          }
+          .pra {
+            padding-left: 3rem;
+            h5 {
+              font-size: 1.5rem;
+            }
+            ul {
+              li {
+                font-size: 0.7rem;
+              }
+            }
+          }
+          img {
+            width: 50%;
+            display: none;
+          }
+          .wrap {
+            h5 {
+              font-size: 2rem;
+
+              padding-left: 3rem;
+            }
+            ul {
+              padding-left: 4rem;
+              li {
+                font-size: 0.8rem;
+                line-height: 1rem;
+              }
+              ul {
+                padding-left: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ========================== Banner End ========================== //
+
+  // ========================== Hero_wrap Start ========================== //
+  .hero_wrap {
+    background-color: $primary-background-color;
+    border-bottom-right-radius: 50px;
+
+    // ======= Architecture Start ======= //
+    .Architecture {
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 50px;
+      padding: 3rem 0;
+      .head {
+        h1 {
+          font-size: 1rem;
+        }
+      }
+
+      .body_layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: stretch;
+        justify-items: flex-start;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        .items {
+          width: 100%;
+          background-color: #000c66;
+          padding: 2rem;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          h1 {
+            font-size: 1.3rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            color: #fff;
+          }
+          ul {
+            padding-left: 1rem;
+            li {
+              color: #fff;
+              line-height: 1.2rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+    // ======= Architecture End ======= //
+
+    // ======= Client Start ======= //
+    .clients {
+      padding: 2rem 0;
+      .head {
+        padding-bottom: 2rem;
+        h1 {
+          font-size: 1rem;
+        }
+      }
+      .body_layout {
+        .heads {
+          grid-template-columns: repeat(4, 1fr);
+          column-gap: 0.5rem;
+          padding: 0.5rem;
+          text-align: center;
+          h1 {
+            font-size: 0.8rem;
+            color: #fff;
+          }
+        }
+        .body_info {
+          background-color: #fff;
+          .items {
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 0.5rem;
+            padding: 0.5rem;
+            height: 130px;
+
+            img {
+              width: 100%;
+              height: 50%;
+            }
+            iframe {
+              width: 100%;
+              text-align: center;
+              height: 50%;
+            }
+            h1 {
+              font-size: 0.8rem;
+              line-height: 1rem;
+            }
+            ul {
+              li {
+                font-size: 0.5rem;
+                line-height: 0.6rem;
+                padding-bottom: 0.5rem;
+              }
+            }
+          }
+          .items:nth-child(even) {
+            background-color: #262f753a;
+          }
+        }
+      }
+    }
+  }
+  // ======= Client End ======= //
+  // ========================== Hero_wrap end ========================== //
+
+  // ========================== Cloud_service Start ========================== //
+  .cloud_service_solutions {
+    padding: 2rem 3rem 5rem;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+    .head {
+      padding-bottom: 0rem;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    .body_layout {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: stretch;
+      justify-items: flex-start;
+      column-gap: 2rem;
+      .itames {
+        padding-top: 2rem;
+        width: 100%;
+        .card {
+          height: 100%;
+          border: none;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          .heads {
+            padding: 0.5rem;
+            h1 {
+              font-size: 1rem;
+            }
+          }
+          .card-body {
+            ul {
+              li {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ========================== Cloud_service End ========================== //
+  //  ========================== Data_service Start ========================== //
+  .data_engineer_solution {
+    padding: 3rem 3rem 5rem;
+    .head {
+      padding-bottom: 1rem;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    .body_layout {
+      .iteams {
+        padding-top: 2rem;
+        .card {
+          height: 400px;
+          overflow: hidden;
+          border-radius: 0;
+          border: none;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+
+          .heads {
+            padding: 0.5rem;
+            h1 {
+              font-size: 1rem;
+            }
+          }
+          .card-body {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            ul {
+              li {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //  ========================== Data_service ENd ========================== //
+}

@@ -61,25 +61,25 @@ export class AboutComponent implements OnInit {
         {
           subExperince:
             'Expert in Data Engineering, Cloud Services and Distributed Computing using Apache Spark',
+          natedEx: [
+            {
+              name: 'Data Engineering Pipeline – Architecture, Orchestration, Optimization and Monitoring',
+            },
+            {
+              name: 'Spark Cluster sizing – AWS EMR, Google Cloud Dataproc',
+            },
+            {
+              name: 'Cloud Storage and Datawarehouse – AWS S3, Athena, ADLS, GCS, BigQuery',
+            },
+            {
+              name: 'Big Data Technologies: Hadoop, HDFS, Spark, Scala, pySpark',
+            },
+            {
+              name: 'Databricks on Azure & AWS',
+            },
+          ],
         },
-        {
-          subExperince:
-            'Data Engineering Pipeline – Architecture, Orchestration, Optimization and Monitoring',
-        },
-        {
-          subExperince: 'Spark Cluster sizing – AWS EMR, Google Cloud Dataproc',
-        },
-        {
-          subExperince:
-            'Cloud Storage and Datawarehouse – AWS S3, Athena, ADLS, GCS, BigQuery',
-        },
-        {
-          subExperince:
-            'Big Data Technologies: Hadoop, HDFS, Spark, Scala, pySpark',
-        },
-        {
-          subExperince: 'Databricks on Azure & AWS',
-        },
+
         {
           subExperince:
             'Experience in Pre-Sales, CoE, Alliance, Software Development & Management',
@@ -87,20 +87,23 @@ export class AboutComponent implements OnInit {
         {
           subExperince:
             'Worked for TCS, Wipro and has interfaced with MNCs like Nortel, Motorola and Alcatel-Lucent',
-        },
-        {
-          subExperince: 'Feature design in Network-Switches',
-        },
-        {
-          subExperince:
-            'Data-driven Contact Centre solution in Healthcare, Banking and Telcos',
-        },
-        {
-          subExperince:
-            'Data Migration, ETL to Salesforce.com application from Siebel CRM',
-        },
-        {
-          subExperince: 'IT Transformation Programs',
+          natedEx: [
+            {
+              name: 'Feature design in Network-Switches',
+            },
+            {
+              name: 'Data-driven Contact Centre solution in Healthcare, Banking and Telcos',
+            },
+            {
+              name: 'Cloud Storage and Datawarehouse – AWS S3, Athena, ADLS, GCS, BigQuery',
+            },
+            {
+              name: 'Data Migration, ETL to Salesforce.com application from Siebel CRM',
+            },
+            {
+              name: 'IT Transformation Programs',
+            },
+          ],
         },
       ],
     },
@@ -121,17 +124,17 @@ export class AboutComponent implements OnInit {
         {
           subExperince:
             'Expert in Data Engineering covering all the Data Management aspects',
-        },
-        {
-          subExperince:
-            'Data Engineering Pipeline – Architecture, Orchestration, Optimization and Monitoring',
-        },
-        {
-          subExperince:
-            'Architecting Distributed Computing solutions using Apache Spark, Hive, BigQuery and AWS Athena, RedShift, DBT, AWS Lambda, Cloud Watch, Cloud Build, Apache Airflow.',
-        },
-        {
-          subExperince: 'Databricks on Azure & AWS',
+          natedEx: [
+            {
+              name: 'Data Engineering Pipeline – Architecture, Orchestration, Optimization and Monitoring',
+            },
+            {
+              name: 'Architecting Distributed Computing solutions using Apache Spark, Hive, BigQuery and AWS Athena',
+            },
+            {
+              name: 'Databricks on Azure & AWS',
+            },
+          ],
         },
         {
           subExperince:
@@ -140,17 +143,17 @@ export class AboutComponent implements OnInit {
         {
           subExperince:
             'Worked for TCS, Wipro and has interfaced with MNCs like Nortel, Motorola and Alcatel-Lucent',
-        },
-        {
-          subExperince: 'Worked in Oracle India for 16+ years',
-        },
-        {
-          subExperince:
-            'Oracle E-Business Release Management expert - 11i to R12.2 ',
-        },
-        {
-          subExperince:
-            'Developed SaaS solutions for Manufacturing industry on Oracle Cloud',
+          natedEx: [
+            {
+              name: 'Worked in Oracle India for 16+ years',
+            },
+            {
+              name: 'Oracle E-Business Release Management expert - 11i to R12.2 ',
+            },
+            {
+              name: 'Developed SaaS solutions for Manufacturing industry on Oracle Cloud',
+            },
+          ],
         },
       ],
     },

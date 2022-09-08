@@ -28,16 +28,8 @@
   padding-left: 2rem;
   li {
     font-size: 0.9rem;
-    list-style: none;
+
     line-height: 1.5rem;
     text-align: start;
-    &::before {
-      content: "\2022";
-      color: $primary-color-white;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
   }
 }

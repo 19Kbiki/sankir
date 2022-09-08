@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import * as AOS from 'aos';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -279,7 +280,9 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    AOS.init();
+  }
 
   safeUrl(url: string) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
@@ -287,13 +290,17 @@ export class HomeComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
     margin: 30,
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['<', '>'],
+
+    navText: [
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+    ],
     responsive: {
       0: {
         items: 1,

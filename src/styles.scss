@@ -30,3 +30,37 @@ ul {
 a {
   text-decoration: none;
 }
+
+.data_engineer_solution .body_layout .owl-next,
+.data_engineer_solution .body_layout .owl-prev {
+  background-color: rgba(70, 139, 204, 0.493) !important;
+  color: #222 !important;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 50% !important;
+  position: absolute;
+  top: 50%;
+}
+
+.data_engineer_solution .body_layout .owl-next:hover,
+.data_engineer_solution .body_layout .owl-prev:hover {
+  background-color: rgb(70, 139, 204) !important;
+}
+.data_engineer_solution .body_layout .owl-next i,
+.data_engineer_solution .body_layout .owl-prev i {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  color: $primary-color-white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.data_engineer_solution .body_layout .owl-prev {
+  left: -8px;
+  transform: translate(-50%, -50%);
+}
+.data_engineer_solution .body_layout .owl-next {
+  right: -68px;
+  transform: translate(-50%, -50%);
+}
