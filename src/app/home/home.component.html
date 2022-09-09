@@ -36,7 +36,7 @@
     <div class="carousel-item active">
       <div class="carousel-caption">
         <div class="info">
-          <div class="pra">
+          <div class="pra" data-aos="zoom-in" data-aos-duration="3000">
             <h5>Expertise in Data Engineering on Cloud</h5>
             <ul>
               <li>Data Engineering pipeline – Architecture, Orchestration,</li>
@@ -168,6 +168,38 @@
       </div>
     </div>
   </section>
+  <section class="clients_mobile">
+    <div class="container">
+      <div class="head">
+        <h1>PoCs Done For Clients</h1>
+      </div>
+      <div class="body_layout">
+        <div class="heads">
+          <div class="head_items">
+            <h1>Technology Focus</h1>
+          </div>
+          <div class="head_items">
+            <h1>Description</h1>
+          </div>
+          <div class="head_items">
+            <h1>Proof of Work</h1>
+          </div>
+        </div>
+
+        <div class="body_info">
+          <div class="items" *ngFor="let client of clientTables">
+            <h1>{{ client.name }}</h1>
+            <ul>
+              <li *ngFor="let product of client.products">
+                {{ product.productsName }}
+              </li>
+            </ul>
+            <iframe [src]="safeUrl(client.video)"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </section>
 
 <section class="cloud_service_solutions" id="cloud_service">
@@ -176,7 +208,12 @@
       <h1>Cloud Services and Solution</h1>
     </div>
     <div class="body_layout">
-      <div class="itames">
+      <div
+        class="itames"
+        data-aos="flip-left"
+        data-aos-offset="600"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="card">
           <div class="heads">
             <h1>AWS</h1>
@@ -195,7 +232,12 @@
           </div>
         </div>
       </div>
-      <div class="itames">
+      <div
+        class="itames"
+        data-aos="flip-left"
+        data-aos-offset="600"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="card">
           <div class="heads">
             <h1>Azure</h1>
@@ -214,7 +256,12 @@
           </div>
         </div>
       </div>
-      <div class="itames">
+      <div
+        class="itames"
+        data-aos="flip-left"
+        data-aos-offset="600"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="card">
           <div class="heads">
             <h1>GCP</h1>

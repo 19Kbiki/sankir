@@ -317,4 +317,34 @@ export class HomeComponent implements OnInit {
     },
     nav: true,
   };
+
+  mobileCustomOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    margin: 30,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+
+    navText: [
+      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 2,
+      },
+      740: {
+        items: 3,
+      },
+      940: {
+        items: 3,
+      },
+    },
+    nav: true,
+  };
 }

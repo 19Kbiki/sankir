@@ -166,187 +166,187 @@
   background-color: rgba(255, 255, 255, 0.863);
 }
 
+// @media screen and (max-width: 600px) {
+//   .banner {
+//     background: linear-gradient(
+//         90deg,
+//         rgba(2, 0, 36, 1) 0%,
+//         rgba(9, 9, 121, 0.541) 35%,
+//         rgba(2, 0, 36, 0.521) 100%
+//       ),
+//       url("https://img.freepik.com/free-vector/vector-infographic-background-with-cartoon-interior-future-data-center-room-with-server-hardware-hologram-processor-concept-bigdata-technology-cloud-information-base_107791-3567.jpg?w=1380&t=st=1662574978~exp=1662575578~hmac=c84360172e3b658966b8ac626ff48bf4f0a33187451f5aa9827205498905594b");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     padding: 10rem 0;
+//     h1 {
+//       font-size: 5rem;
+//       font-weight: 800;
+//       color: #fff;
+//       text-align: center;
+//     }
+//   }
+
+//   .about_body {
+//     background-color: #fff;
+//     padding: 3rem 0;
+
+//     .about_info {
+//       display: flex;
+//       justify-content: space-around;
+//       .image {
+//         text-align: center;
+//       }
+//       .kiran_about {
+//         .content {
+//           padding-top: 3rem;
+//           h1 {
+//             font-size: 1.5rem;
+//             font-weight: 800;
+//             padding-bottom: 0.5rem;
+//             color: rgb(33, 77, 119);
+//             text-align: center;
+//           }
+//           h3 {
+//             font-size: 1.5rem;
+//             font-weight: 400;
+//             padding-bottom: 1.2rem;
+//             text-align: center;
+//           }
+//           ul {
+//             padding-left: 2rem;
+//             li {
+//               list-style: none;
+//               text-align: start;
+//               font-size: 1.2rem;
+//               font-weight: 600;
+//               letter-spacing: 0.5px;
+//               color: rgb(33, 77, 119);
+//               padding-bottom: 0.5rem;
+//             }
+//             ul {
+//               li {
+//                 font-size: 1rem;
+//                 font-weight: 500;
+//                 color: #000;
+//                 letter-spacing: 0;
+//                 padding-bottom: 0;
+//               }
+//             }
+//           }
+//         }
+//         .social_media {
+//           padding-top: 2rem;
+//           a {
+//             font-size: 1rem;
+//             margin: 1rem;
+//             color: #000;
+//             font-weight: 500;
+//             display: block;
+//             i {
+//               margin-right: 0.5rem;
+//               font-size: 1rem;
+//             }
+//             .fa-linkedin {
+//               background-color: rgb(19, 42, 170);
+//               padding: 0.4rem 0.5rem;
+//               border-radius: 0.12225rem;
+//               color: #fff;
+//             }
+//             .fa-github {
+//               background-color: rgb(22, 22, 22);
+//               color: #fff;
+//               padding: 0.3rem 0.4rem;
+//               border-radius: 0.12225rem;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .about_body {
+//     background-color: #fff;
+//     padding: 3rem 0;
+//     .about_info {
+//       display: flex;
+//       justify-content: space-evenly;
+//       flex-direction: column;
+//       .image {
+//         text-align: center;
+//       }
+//       .sanjay_about {
+//         width: 100%;
+//         .content {
+//           padding-top: 3rem;
+//           h1 {
+//             font-size: 1.5rem;
+//             font-weight: 800;
+//             padding-bottom: 0.5rem;
+//             color: rgb(33, 77, 119);
+//             text-align: center;
+//           }
+//           h3 {
+//             font-size: 1.5rem;
+//             font-weight: 400;
+//             padding-bottom: 1.2rem;
+//             text-align: center;
+//           }
+//           ul {
+//             padding-left: 2rem;
+//             li {
+//               list-style: none;
+//               text-align: start;
+//               font-size: 1.1rem;
+//               font-weight: 600;
+//               letter-spacing: 0.05px;
+//               color: rgb(33, 77, 119);
+//               padding-bottom: 0.3rem;
+//             }
+//             ul {
+//               li {
+//                 font-size: 1rem;
+//                 font-weight: 500;
+//                 color: #000;
+//                 letter-spacing: 0;
+//                 padding-bottom: 0;
+//               }
+//             }
+//           }
+//         }
+//         .social_media {
+//           padding-top: 2rem;
+//           a {
+//             font-size: 1rem;
+//             margin: 1rem;
+//             color: #000;
+//             font-weight: 500;
+//             display: block;
+//             i {
+//               margin-right: 0.5rem;
+//               font-size: 1rem;
+//             }
+//             .fa-linkedin {
+//               background-color: rgb(19, 42, 170);
+//               padding: 0.4rem 0.5rem;
+//               border-radius: 0.12225rem;
+//               color: #fff;
+//             }
+//             .fa-github {
+//               background-color: rgb(22, 22, 22);
+//               color: #fff;
+//               padding: 0.3rem 0.4rem;
+//               border-radius: 0.12225rem;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .sanjay {
+//     background-color: rgba(255, 255, 255, 0.863);
+//   }
+// }
 @media screen and (max-width: 600px) {
-  .banner {
-    background: linear-gradient(
-        90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(9, 9, 121, 0.541) 35%,
-        rgba(2, 0, 36, 0.521) 100%
-      ),
-      url("https://img.freepik.com/free-vector/vector-infographic-background-with-cartoon-interior-future-data-center-room-with-server-hardware-hologram-processor-concept-bigdata-technology-cloud-information-base_107791-3567.jpg?w=1380&t=st=1662574978~exp=1662575578~hmac=c84360172e3b658966b8ac626ff48bf4f0a33187451f5aa9827205498905594b");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10rem 0;
-    h1 {
-      font-size: 5rem;
-      font-weight: 800;
-      color: #fff;
-      text-align: center;
-    }
-  }
-
-  .about_body {
-    background-color: #fff;
-    padding: 3rem 0;
-
-    .about_info {
-      display: flex;
-      justify-content: space-around;
-      .image {
-        text-align: center;
-      }
-      .kiran_about {
-        .content {
-          padding-top: 3rem;
-          h1 {
-            font-size: 1.5rem;
-            font-weight: 800;
-            padding-bottom: 0.5rem;
-            color: rgb(33, 77, 119);
-            text-align: center;
-          }
-          h3 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            padding-bottom: 1.2rem;
-            text-align: center;
-          }
-          ul {
-            padding-left: 2rem;
-            li {
-              list-style: none;
-              text-align: start;
-              font-size: 1.2rem;
-              font-weight: 600;
-              letter-spacing: 0.5px;
-              color: rgb(33, 77, 119);
-              padding-bottom: 0.5rem;
-            }
-            ul {
-              li {
-                font-size: 1rem;
-                font-weight: 500;
-                color: #000;
-                letter-spacing: 0;
-                padding-bottom: 0;
-              }
-            }
-          }
-        }
-        .social_media {
-          padding-top: 2rem;
-          a {
-            font-size: 1rem;
-            margin: 1rem;
-            color: #000;
-            font-weight: 500;
-            display: block;
-            i {
-              margin-right: 0.5rem;
-              font-size: 1rem;
-            }
-            .fa-linkedin {
-              background-color: rgb(19, 42, 170);
-              padding: 0.4rem 0.5rem;
-              border-radius: 0.12225rem;
-              color: #fff;
-            }
-            .fa-github {
-              background-color: rgb(22, 22, 22);
-              color: #fff;
-              padding: 0.3rem 0.4rem;
-              border-radius: 0.12225rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  .about_body {
-    background-color: #fff;
-    padding: 3rem 0;
-    .about_info {
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
-      .image {
-        text-align: center;
-      }
-      .sanjay_about {
-        width: 100%;
-        .content {
-          padding-top: 3rem;
-          h1 {
-            font-size: 1.5rem;
-            font-weight: 800;
-            padding-bottom: 0.5rem;
-            color: rgb(33, 77, 119);
-            text-align: center;
-          }
-          h3 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            padding-bottom: 1.2rem;
-            text-align: center;
-          }
-          ul {
-            padding-left: 2rem;
-            li {
-              list-style: none;
-              text-align: start;
-              font-size: 1.1rem;
-              font-weight: 600;
-              letter-spacing: 0.05px;
-              color: rgb(33, 77, 119);
-              padding-bottom: 0.3rem;
-            }
-            ul {
-              li {
-                font-size: 1rem;
-                font-weight: 500;
-                color: #000;
-                letter-spacing: 0;
-                padding-bottom: 0;
-              }
-            }
-          }
-        }
-        .social_media {
-          padding-top: 2rem;
-          a {
-            font-size: 1rem;
-            margin: 1rem;
-            color: #000;
-            font-weight: 500;
-            display: block;
-            i {
-              margin-right: 0.5rem;
-              font-size: 1rem;
-            }
-            .fa-linkedin {
-              background-color: rgb(19, 42, 170);
-              padding: 0.4rem 0.5rem;
-              border-radius: 0.12225rem;
-              color: #fff;
-            }
-            .fa-github {
-              background-color: rgb(22, 22, 22);
-              color: #fff;
-              padding: 0.3rem 0.4rem;
-              border-radius: 0.12225rem;
-            }
-          }
-        }
-      }
-    }
-  }
-  .sanjay {
-    background-color: rgba(255, 255, 255, 0.863);
-  }
-}
-@media screen and (max-width: 424px) {
   .banner {
     background: linear-gradient(
         90deg,

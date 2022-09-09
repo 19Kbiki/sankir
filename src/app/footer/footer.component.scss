@@ -57,7 +57,7 @@ footer {
 }
 @media screen and (max-width: 600px) {
   footer {
-    padding: 5rem 0 3rem;
+    padding: 3rem 0 2rem;
     background-color: $footer-color;
     color: #fff;
     .footer_body {
@@ -65,24 +65,25 @@ footer {
       grid-template-columns: repeat(2, 1fr);
       align-items: flex-start;
       justify-content: center;
-      justify-items: center;
+      justify-items: flex-start;
+      row-gap: 1rem;
       .items {
         h1 {
-          font-size: 1.5rem;
-          padding-bottom: 1rem;
+          font-size: 1.1rem;
+          padding-bottom: 0.6rem;
           color: #00d8f5;
         }
         p {
-          font-size: 1rem;
-          line-height: 2rem;
+          font-size: 0.7rem;
+          line-height: 1.2rem;
           color: #cdf8fd;
         }
         ul {
           li {
             list-style: none;
             a {
-              font-size: 1rem;
-              line-height: 2rem;
+              font-size: 0.7rem;
+              line-height: 1.2rem;
               color: #cdf8fd;
             }
           }
@@ -102,11 +103,11 @@ footer {
     }
     .footer_bottom {
       text-align: center;
-      margin-top: 3rem;
+      margin-top: 1rem;
       padding-top: 2rem;
       border-top: 1px solid rgba(255, 255, 255, 0.473);
       h1 {
-        font-size: 1rem;
+        font-size: 0.6rem;
         color: rgba(255, 255, 255, 0.39);
       }
     }

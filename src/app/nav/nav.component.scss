@@ -40,7 +40,7 @@ nav {
           font-weight: 500;
         }
         ul {
-          background: rgb(49, 65, 202);
+          background: $footer_color;
           width: 200%;
           position: absolute;
           padding: 1rem 0;
@@ -75,6 +75,7 @@ nav {
 }
 @media screen and (max-width: 991px) {
   nav {
+    background-color: $footer_color;
     // .navbar-toggler {
     //   position: relative;
     //   width: 50px;
@@ -127,38 +128,27 @@ nav {
             font-weight: 500;
           }
           ul {
-            background: rgb(49, 65, 202);
             width: 100%;
             position: unset;
-            margin-top: 1rem;
-            padding: 1rem 0;
+            margin-top: 0rem;
+            padding: 0.5rem 0;
             li {
               display: block;
               line-height: 1rem;
-              padding: 1rem;
+              padding: 0.5rem;
+
               a {
                 color: #fff;
-              }
-              &:hover a {
-                color: #000;
-              }
-              &:hover {
-                background-color: #fff;
               }
             }
           }
         }
       }
     }
-    .show {
-      background-color: rgb(49, 65, 202);
-    }
   }
 }
 @media screen and (max-width: 424px) {
   nav {
-    // border-bottom: 3px solid $primary-text-color;
-    background-color: $primary-background-color;
     position: relative;
     z-index: 2;
 
@@ -186,8 +176,6 @@ nav {
             font-weight: 500;
           }
           ul {
-            background: rgb(49, 65, 202);
-
             opacity: 0;
             width: 200%;
             position: absolute;
@@ -199,12 +187,7 @@ nav {
               padding: 1rem;
               a {
                 color: #fff;
-              }
-              &:hover a {
-                color: #000;
-              }
-              &:hover {
-                background-color: #fff;
+                font-size: 0.8rem;
               }
             }
           }
