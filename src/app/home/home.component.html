@@ -106,6 +106,8 @@
     </div>
   </div>
 </section>
+
+<!-- for product -->
 <section class="hero_wrap">
   <section class="Architecture" id="Architecture">
     <div class="container">
@@ -113,24 +115,31 @@
         <h1>Consultancy - Expertise in Data Engineering on Cloud</h1>
       </div>
       <div class="body_layout">
-        <div class="items">
-          <h1>{{ ArchiName }}</h1>
-          <ul *ngFor="let info of ulInfo">
-            <li>{{ info }}</li>
-          </ul>
-        </div>
-        <div class="items">
-          <h1>{{ leveName }}</h1>
-          <ul *ngFor="let service of Services">
+        <div class="service_box">
+          <h2>{{ leveName }}</h2>
+          <ul *ngFor="let service of Services" class="tree">
             <li>
               {{ service.name }}
+              <ul *ngFor="let child of service.childLi">
+                <li>{{ child.nameLi }}</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="service_box">
+          <h2>{{ ArchiName }}</h2>
+          <ul *ngFor="let info of ulInfo">
+            <li>
+              {{ info.ulName }}
+              <ul *ngFor="let chil of info.chilLi">
+                <li>{{ chil.Li }}</li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-
   <section class="clients">
     <div class="container">
       <div class="head">
@@ -162,127 +171,212 @@
               </li>
             </ul>
             <iframe [src]="safeUrl(client.video)"></iframe>
-            <img [src]="client.image" />
+            <div class="doc">
+              <a target="_blank" [href]="client.url">{{ client.image }}</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section class="clients_mobile">
     <div class="container">
       <div class="head">
-        <h1>PoCs Done For Clients</h1>
+        <h1>PoCs</h1>
       </div>
       <div class="body_layout">
-        <div class="heads">
-          <div class="head_items">
-            <h1>Technology Focus</h1>
+        <div class="item">
+          <h1>Snowflake POC</h1>
+          <div class="video">
+            <iframe
+              src="https://player.vimeo.com/video/746053538?color&autopause=0&loop=0&muted=0&title=1&portrait=0&byline=1&h=35e05ea07a#t="
+              frameborder="0"
+              style="width: 100%"
+            ></iframe>
           </div>
-          <div class="head_items">
-            <h1>Description</h1>
-          </div>
-          <div class="head_items">
-            <h1>Proof of Work</h1>
+          <div class="button">
+            <a href="https://www.sankir.com/snowflake-poc-readme/"
+              >Snowflake-POC-Readme</a
+            >
           </div>
         </div>
-
-        <div class="body_info">
-          <div class="items" *ngFor="let client of clientTables">
-            <h1>{{ client.name }}</h1>
-            <ul>
-              <li *ngFor="let product of client.products">
-                {{ product.productsName }}
-              </li>
-            </ul>
-            <iframe [src]="safeUrl(client.video)"></iframe>
+        <div class="item">
+          <h1>Snowflake POC</h1>
+          <div class="video">
+            <iframe
+              src="https://player.vimeo.com/video/746053538?color&autopause=0&loop=0&muted=0&title=1&portrait=0&byline=1&h=35e05ea07a#t="
+              frameborder="0"
+              style="width: 100%"
+            ></iframe>
+          </div>
+          <div class="button">
+            <a href="https://www.sankir.com/snowflake-poc-readme/"
+              >Snowflake-POC-Readme</a
+            >
+          </div>
+        </div>
+        <div class="item">
+          <h1>Snowflake POC</h1>
+          <div class="video">
+            <iframe
+              src="https://player.vimeo.com/video/746053538?color&autopause=0&loop=0&muted=0&title=1&portrait=0&byline=1&h=35e05ea07a#t="
+              frameborder="0"
+              style="width: 100%"
+            ></iframe>
+          </div>
+          <div class="button">
+            <a href="https://www.sankir.com/snowflake-poc-readme/"
+              >Snowflake-POC-Readme</a
+            >
           </div>
         </div>
       </div>
     </div>
   </section>
 </section>
-
-<section class="cloud_service_solutions" id="cloud_service">
-  <div class="container">
-    <div class="head">
-      <h1>Cloud Services and Solution</h1>
-    </div>
-    <div class="body_layout">
-      <div
-        class="itames"
-        data-aos="flip-left"
-        data-aos-offset="600"
-        data-aos-easing="ease-in-sine"
-      >
-        <div class="card">
-          <div class="heads">
-            <h1>AWS</h1>
-          </div>
-          <div class="card-body">
-            <ul *ngFor="let itame of awsItames">
-              <li>
-                {{ itame.prentList }}
-                <ul>
-                  <li *ngFor="let childItem of itame.childLists">
-                    {{ childItem.childList }}
-                  </li>
-                </ul>
-              </li>
-            </ul>
+<div class="hero" id="cloud_service">
+  <section class="cloud_service_solutions">
+    <div class="container">
+      <div class="head">
+        <h1>Cloud Services and Solution</h1>
+      </div>
+      <div class="body_layout">
+        <div class="itames">
+          <div class="card">
+            <div class="heads">
+              <h1>AWS</h1>
+            </div>
+            <div class="card-body">
+              <ul *ngFor="let itame of awsItames">
+                <li>
+                  {{ itame.prentList }}
+                  <ul>
+                    <li *ngFor="let childItem of itame.childLists">
+                      {{ childItem.childList }}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="itames"
-        data-aos="flip-left"
-        data-aos-offset="600"
-        data-aos-easing="ease-in-sine"
-      >
-        <div class="card">
-          <div class="heads">
-            <h1>Azure</h1>
-          </div>
-          <div class="card-body">
-            <ul *ngFor="let itame of azureItames">
-              <li>
-                {{ itame.prentList }}
-                <ul>
-                  <li *ngFor="let childItem of itame.childLists">
-                    {{ childItem.childList }}
-                  </li>
-                </ul>
-              </li>
-            </ul>
+        <div class="itames">
+          <div class="card">
+            <div class="heads">
+              <h1>Azure</h1>
+            </div>
+            <div class="card-body">
+              <ul *ngFor="let itame of azureItames">
+                <li>
+                  {{ itame.prentList }}
+                  <ul>
+                    <li *ngFor="let childItem of itame.childLists">
+                      {{ childItem.childList }}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="itames"
-        data-aos="flip-left"
-        data-aos-offset="600"
-        data-aos-easing="ease-in-sine"
-      >
-        <div class="card">
-          <div class="heads">
-            <h1>GCP</h1>
-          </div>
-          <div class="card-body">
-            <ul *ngFor="let itame of gcpItames">
-              <li>
-                {{ itame.prentList }}
-                <ul>
-                  <li *ngFor="let childItem of itame.childLists">
-                    {{ childItem.childList }}
-                  </li>
-                </ul>
-              </li>
-            </ul>
+        <div class="itames">
+          <div class="card">
+            <div class="heads">
+              <h1>GCP</h1>
+            </div>
+            <div class="card-body">
+              <ul *ngFor="let itame of gcpItames">
+                <li>
+                  {{ itame.prentList }}
+                  <ul>
+                    <li *ngFor="let childItem of itame.childLists">
+                      {{ childItem.childList }}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="cloud_service_solutions_mobile" id="cloud_service_mobile">
+    <div class="container">
+      <div class="head">
+        <h1>Cloud Services and Solution</h1>
+      </div>
+      <div class="body_layout">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide>
+            <div class="itames">
+              <div class="card">
+                <div class="heads">
+                  <h1>AWS</h1>
+                </div>
+                <div class="card-body">
+                  <ul *ngFor="let itame of awsItames">
+                    <li>
+                      {{ itame.prentList }}
+                      <ul>
+                        <li *ngFor="let childItem of itame.childLists">
+                          {{ childItem.childList }}
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div></ng-template
+          >
+          <ng-template carouselSlide>
+            <div class="itames">
+              <div class="card">
+                <div class="heads">
+                  <h1>Azure</h1>
+                </div>
+                <div class="card-body">
+                  <ul *ngFor="let itame of azureItames">
+                    <li>
+                      {{ itame.prentList }}
+                      <ul>
+                        <li *ngFor="let childItem of itame.childLists">
+                          {{ childItem.childList }}
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div></ng-template
+          >
+          <ng-template carouselSlide>
+            <div class="itames">
+              <div class="card">
+                <div class="heads">
+                  <h1>GCP</h1>
+                </div>
+                <div class="card-body">
+                  <ul *ngFor="let itame of gcpItames">
+                    <li>
+                      {{ itame.prentList }}
+                      <ul>
+                        <li *ngFor="let childItem of itame.childLists">
+                          {{ childItem.childList }}
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div></ng-template
+          >
+        </owl-carousel-o>
+      </div>
+    </div>
+  </section>
+</div>
 
 <section class="data_engineer_solution" id="data_engineer">
   <div class="container">

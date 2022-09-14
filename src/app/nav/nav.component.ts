@@ -1,4 +1,10 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  HostListener,
+  OnInit,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,13 +12,11 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent implements OnInit {
-  showPincode: boolean = false;
   header_variable = false;
-  dropdownMenu: boolean = false;
-  dropdownMenuTwo: boolean = false;
-  dropdownMenuThree: boolean = false;
+  showPincode: boolean = false;
 
   ngOnInit(): void {}
+  @Output() trogalrSidebarForMe: EventEmitter<any> = new EventEmitter();
   @HostListener('document:scroll')
   scrollfunction() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -21,18 +25,8 @@ export class NavComponent implements OnInit {
       this.header_variable = false;
     }
   }
-
   showOrhidePincodeform() {
     this.showPincode = !this.showPincode;
-  }
-  dropdown() {
-    this.dropdownMenu = !this.dropdownMenu;
-  }
-  dropdownTwo() {
-    this.dropdownMenuTwo = !this.dropdownMenuTwo;
-  }
-  dropdownThree() {
-    this.dropdownMenuThree = !this.dropdownMenuThree;
   }
   manuicons: boolean = false;
   show() {
@@ -41,5 +35,17 @@ export class NavComponent implements OnInit {
     } else {
       this.manuicons = false;
     }
+  }
+  active: boolean = false;
+  showmenu() {
+    if (this.active == false) {
+      this.active = true;
+    } else {
+      this.active = false;
+    }
+  }
+
+  trogalrSidebar() {
+    this.trogalrSidebarForMe.emit();
   }
 }

@@ -13,25 +13,49 @@ export class HomeComponent implements OnInit {
   // hero_wrap array
   ArchiName = 'Solution Architecture';
   ulInfo = [
-    'Design the Data Pipeline on Cloud',
-    'Multiple Solution proposals for one data problem',
-    'E2E Data Engineering Automation using Infrastructure as a Code (AWS CDK and Terraform)',
-    'Optimize the Data processing Pipelines',
-    'Recommend Best Practices for data & network security',
-    'Cluster Sizing and Optimization for better performance of workloads',
-    'Work with Client’s CxO, Technical Managers or Engineering team to solve the organizational Data problems',
-    'Aims to align with Client’s Core Business Objectives',
+    {
+      ulName: 'Cloud Services and Solution',
+    },
+    {
+      ulName: 'Architecting the Data Pipeline on Cloud',
+      chilLi: [
+        {
+          Li: 'Multiple Solution options for a data problem',
+        },
+      ],
+    },
+    {
+      ulName: 'Data Engineering Tools and Solution on Cloud',
+      chilLi: [
+        {
+          Li: 'Optimizing the Data processing',
+        },
+        {
+          Li: 'Best Practices in data & network security',
+        },
+      ],
+    },
+    { ulName: 'API development' },
   ];
+
   // Architecture arry end
 
   leveName = 'Leverage SanKir Services in';
   Services = [
     {
-      name: 'Cloud Services and Solution',
+      name: 'End-to-End DE Automation using AWS CDK Toolkit and Terraform',
+      childLi: [
+        {
+          nameLi:
+            'AWS, Azure, GCP, Databricks, Snowflake, Airflow, Apache Spark',
+        },
+        {
+          nameLi:
+            'S3, EMR, Athena, BigQuery, ADLS, Azure Data Factory, Jupyter Notebook',
+        },
+      ],
     },
-    {
-      name: 'Data Engineering Tools and Solution',
-    },
+
     {
       name: 'CI/CD – DevOps',
     },
@@ -43,6 +67,12 @@ export class HomeComponent implements OnInit {
     },
     {
       name: 'API development using Golang',
+    },
+    {
+      name: 'Spark Cluster - Sizing and Optimization for better performance of workloads',
+    },
+    {
+      name: 'Quickly testing the solution on SanKir"s AWS/Azure/GCP Cloud Infrastructure',
     },
   ];
 
@@ -65,9 +95,10 @@ export class HomeComponent implements OnInit {
 
       video:
         'https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sankir.com&amp;widgetid=1',
-      image:
-        'https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png',
+      image: 'Airflow-POC-Readme',
+      url: 'https://www.sankir.com/wp-content/uploads/2022/09/readme_poc_Airflow.pdf',
     },
+
     {
       name: 'Orchestration using Airflow for Ed-Fi operational store used in K-12 Education',
       products: [
@@ -81,9 +112,11 @@ export class HomeComponent implements OnInit {
 
       video:
         'https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sankir.com&amp;widgetid=1',
-      image:
-        'https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png',
+      image: 'Databricks-POC-Readme',
+
+      url: 'https://www.sankir.com/wp-content/uploads/2022/09/databricks-abfs-poc-README.pdf',
     },
+
     {
       name: 'Data Engineering using built-in and scalable Azure Databricks platform',
       products: [
@@ -98,11 +131,10 @@ export class HomeComponent implements OnInit {
             'Data Profiling – Column profile detail & Data quality metrics',
         },
       ],
-
       video:
         'https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sankir.com&amp;widgetid=1',
-      image:
-        'https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png',
+      image: 'Snowflake-POC-Readme',
+      url: 'https://www.sankir.com/wp-content/uploads/2022/09/snowflake-poc-README.pdf',
     },
     {
       name: 'Loading retail data from AWS S3 file storage into Snowflake tables',
@@ -121,8 +153,8 @@ export class HomeComponent implements OnInit {
 
       video:
         'https://www.youtube.com/embed/XHOmBV4js_E?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.sankir.com&amp;widgetid=1',
-      image:
-        'https://www.sankir.com/wp-content/plugins/elementor/assets/images/placeholder.png',
+      image: 'AWS-CDK-POC-Readme',
+      url: '',
     },
   ];
 
@@ -291,7 +323,7 @@ export class HomeComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: true,
+    touchDrag: false,
     margin: 30,
     pullDrag: false,
     dots: false,

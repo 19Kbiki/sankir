@@ -1,47 +1,99 @@
-<nav class="navbar navbar-expand-lg" [class.header_change]="header_variable">
-  <div class="container">
-    <a class="navbar-brand" href="#">Sankir Technologies</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse heading" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#cloud_service"
-            id="navbarDropdownMenuLink"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Consultancy
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+<header>
+  <nav class="decstop_nav" [class.header_change]="header_variable">
+    <div class="container">
+      <div class="nav_bar">
+        <div class="logo">
+          <h1>Sanki Technologies</h1>
+        </div>
+        <div class="menu">
+          <ul>
             <li>
-              <a class="dropdown-item" href="#cloud_service">Cloud Services</a>
+              <a href="#"
+                >Consultancy <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </a>
+              <ul>
+                <li><a href="">Cloud Services </a></li>
+                <li><a href="">Data Engineering Solution</a></li>
+              </ul>
             </li>
-            <li>
-              <a class="dropdown-item" href="#data_engineer"
-                >Data Engineering Tools</a
-              >
-            </li>
+            <li><a href="">Poc</a></li>
+            <li><a href="">About us</a></li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="mobile_nav" [class.header_change]="header_variable">
+    <div class="container">
+      <div class="nav_bar">
+        <div class="logo">
+          <h1>Sankir Technologies</h1>
+        </div>
+        <div class="toggle_button">
+          <button [ngClass]="{manuicons}" (click)="show()" (click)="showmenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<nav class="toggle_menu navbar" [ngClass]="{active}">
+  <div class="menus">
+    <ul class="navbar-nav">
+      <li class="dropdown">
+        <a
+          href="#"
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          >Consultancy
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item nav-link" href="">Cloud Services </a></li>
+          <li>
+            <a class="dropdown-item nav-link" href=""
+              >Data Engineering Solution</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li><a href="">Poc</a></li>
+      <li><a href="">About us</a></li>
+    </ul>
+  </div>
+
+  <div class="bottom">
+    <div class="add">
+      <i class="fa fa-clock-o"></i>
+      <h1>Monday-Friday</h1>
+      <h6>8 Am-9 Pm</h6>
+    </div>
+    <div class="add">
+      <i class="fa fa-map-marker"></i>
+      <h1>Location</h1>
+      <p>247, 3rd Stage, 3rd Block Basaveshwaranagar Bangalore – 560079</p>
+    </div>
+    <div class="add">
+      <i class="fa fa-search"></i>
+      <h1>Visit our Social Page</h1>
+      <ul>
+        <li>
+          <a href=""><i class="fa fa-facebook"></i></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="poc">PoC</a>
+        <li>
+          <a href=""><i class="fa fa-instagram"></i></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="about">About</a>
+        <li>
+          <a href=""><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-youtube"></i></a>
         </li>
       </ul>
     </div>
