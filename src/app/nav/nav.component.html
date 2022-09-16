@@ -3,21 +3,20 @@
     <div class="container">
       <div class="nav_bar">
         <div class="logo">
-          <h1>Sanki Technologies</h1>
+          <h1><a href="">Sankir Technologies</a></h1>
         </div>
         <div class="menu">
-          <ul>
+          <ul class="links">
+            <li><a href="">Home</a></li>
+
             <li>
-              <a href="#"
-                >Consultancy <i class="fa fa-caret-down" aria-hidden="true"></i>
-              </a>
-              <ul>
-                <li><a href="">Cloud Services </a></li>
-                <li><a href="">Data Engineering Solution</a></li>
-              </ul>
+              <a href="#cloud_service" target="_self">Cloud Services</a>
             </li>
-            <li><a href="">Poc</a></li>
-            <li><a href="">About us</a></li>
+            <li><a href="about">About us</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="poc">Poc</a></li>
           </ul>
         </div>
       </div>
@@ -27,7 +26,7 @@
     <div class="container">
       <div class="nav_bar">
         <div class="logo">
-          <h1>Sankir Technologies</h1>
+          <h1><a href="">Sankir Technologies</a></h1>
         </div>
         <div class="toggle_button">
           <button [ngClass]="{manuicons}" (click)="show()" (click)="showmenu()">
@@ -43,28 +42,73 @@
 <nav class="toggle_menu navbar" [ngClass]="{active}">
   <div class="menus">
     <ul class="navbar-nav">
-      <li class="dropdown">
+      <li>
         <a
-          href="#"
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-          >Consultancy
+          href=""
+          [ngClass]="{manuicons}"
+          (click)="show()"
+          (click)="showmenu()"
+          target="_self"
+          >Home
         </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item nav-link" href="">Cloud Services </a></li>
-          <li>
-            <a class="dropdown-item nav-link" href=""
-              >Data Engineering Solution</a
-            >
-          </li>
-        </ul>
       </li>
-      <li><a href="">Poc</a></li>
-      <li><a href="">About us</a></li>
+      <li>
+        <a
+          href="#cloud_service_mobile"
+          [ngClass]="{manuicons}"
+          (click)="show()"
+          (click)="showmenu()"
+          target="_self"
+          >Cloud Services
+        </a>
+      </li>
+      <li>
+        <a
+          href="about"
+          [ngClass]="{manuicons}"
+          (click)="show()"
+          (click)="showmenu()"
+          target="_self"
+          >About us
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="poc"
+          [ngClass]="{manuicons}"
+          (click)="show()"
+          (click)="showmenu()"
+          >Login</a
+        >
+      </li>
+      <li>
+        <a
+          href="about"
+          [ngClass]="{manuicons}"
+          (click)="show()"
+          (click)="showmenu()"
+          >FAQ</a
+        >
+      </li>
+      <li>
+        <a
+          href="about"
+          [ngClass]="{manuicons}"
+          (click)="show()"
+          (click)="showmenu()"
+          >Blog</a
+        >
+      </li>
+      <li>
+        <a
+          href="about"
+          [ngClass]="{manuicons}"
+          (click)="show()"
+          (click)="showmenu()"
+          >Poc</a
+        >
+      </li>
     </ul>
   </div>
 

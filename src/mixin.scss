@@ -11,7 +11,7 @@
   }
 }
 @mixin card_head {
-  background-color: #000c66;
+  background-color: $primary-background-color;
   padding: 1rem;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 
@@ -25,12 +25,18 @@
 }
 
 @mixin card_list {
-  padding-left: 2rem;
   li {
-    font-size: 0.9rem;
+    margin: 0.5em;
+    margin-left: 3em;
+    list-style: none;
 
-    line-height: 1.5rem;
-    text-align: start;
+    &:before {
+      content: "\f006";
+      font-family: "FontAwesome";
+      float: left;
+      margin-left: -1.5em;
+      color: $primary-background-color;
+    }
   }
 }
 @mixin cards {
@@ -42,78 +48,4 @@
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-}
-@mixin info {
-  .info {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    background-color: $secondry-color;
-    transform: translateY(100%) translateY(-88px) translateZ(0);
-    transition: transform 0.5s ease-out;
-  }
-
-  .info:before {
-    z-index: -1;
-    display: block;
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    filter: blur(10px);
-    background-size: cover;
-    opacity: 0.25;
-    transform: translateY(-100%) translateY(88px) translateZ(0);
-    transition: transform 0.5s ease-out;
-  }
-}
-@mixin card_hover {
-  transform: translateY(0) translateZ(0);
-  background-color: #70c5fd;
-  transition: all 1s;
-}
-
-@mixin title {
-  padding: 6rem 1rem 2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.87);
-  line-height: 1.5rem;
-  transition: all 1s;
-}
-@mixin animation {
-  position: absolute;
-  background-color: red;
-  width: auto;
-  height: 0.3rem;
-  top: 2.4vh;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  content: "";
-  border-radius: 15rem;
-  animation: slide 1s ease-out;
-}
-$absol: absolute;
-$main-color: #f23333;
-$main-font: "Roboto", sans-serif;
-$font-color: white;
-@mixin box-shadow {
-  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.2);
-}
-@mixin bar-style {
-  width: 30px;
-  height: 4px;
-  background-color: $font-color;
-}
-@mixin flex-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-@mixin basic-transition {
-  transition: 200ms;
 }

@@ -25,12 +25,12 @@
       data-bs-slide-to="2"
       aria-label="Slide 3"
     ></button>
-    <button
+    <!-- <button
       type="button"
       data-bs-target="#carouselExampleFade"
       data-bs-slide-to="3"
       aria-label="Slide 4"
-    ></button>
+    ></button> -->
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -38,12 +38,12 @@
         <div class="info">
           <div class="pra" data-aos="zoom-in" data-aos-duration="3000">
             <h5>Expertise in Data Engineering on Cloud</h5>
-            <ul>
+            <!-- <ul>
               <li>Data Engineering pipeline – Architecture, Orchestration,</li>
               <li>Databricks, Apache Airflow</li>
               <li>Big Data - Apache Spark, Hadoop, HDFS</li>
               <li>DWH - Google BigQuery, Snowflake and DBT</li>
-            </ul>
+            </ul> -->
           </div>
           <img
             src="https://barakahit.net/html/Techmax/assets/img/home-font.png"
@@ -65,7 +65,7 @@
         </div>
       </div>
     </div>
-    <div class="carousel-item">
+    <!-- <div class="carousel-item">
       <div class="carousel-caption">
         <div class="info">
           <div class="wrap">
@@ -91,7 +91,7 @@
           />
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="carousel-item">
       <div class="carousel-caption">
         <div class="info">
@@ -112,12 +112,12 @@
   <section class="Architecture" id="Architecture">
     <div class="container">
       <div class="head">
-        <h1>Consultancy - Expertise in Data Engineering on Cloud</h1>
+        <h1>Consultancy</h1>
       </div>
       <div class="body_layout">
         <div class="service_box">
           <h2>{{ leveName }}</h2>
-          <ul *ngFor="let service of Services" class="tree">
+          <ul *ngFor="let service of Services">
             <li>
               {{ service.name }}
               <ul *ngFor="let child of service.childLi">
@@ -170,7 +170,17 @@
                 {{ product.productsName }}
               </li>
             </ul>
-            <iframe [src]="safeUrl(client.video)"></iframe>
+            <!-- <iframe
+              src="https://player.vimeo.com/video/746319339?h=8732b35cd1"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe> -->
+            <iframe
+              [src]="safeUrl(client.video)"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
             <div class="doc">
               <a target="_blank" [href]="client.url">{{ client.image }}</a>
             </div>
@@ -180,7 +190,7 @@
     </div>
   </section>
 
-  <section class="clients_mobile">
+  <section class="clients_mobile" id="poc">
     <div class="container">
       <div class="head">
         <h1>PoCs</h1>
@@ -192,6 +202,7 @@
             <iframe
               src="https://player.vimeo.com/video/746053538?color&autopause=0&loop=0&muted=0&title=1&portrait=0&byline=1&h=35e05ea07a#t="
               frameborder="0"
+              loading="lazy"
               style="width: 100%"
             ></iframe>
           </div>
@@ -235,8 +246,8 @@
     </div>
   </section>
 </section>
-<div class="hero" id="cloud_service">
-  <section class="cloud_service_solutions">
+<div class="hero">
+  <section class="cloud_service_solutions" id="cloud_service">
     <div class="container">
       <div class="head">
         <h1>Cloud Services and Solution</h1>
@@ -245,6 +256,7 @@
         <div class="itames">
           <div class="card">
             <div class="heads">
+              <!-- <img src="../../assets/aws.svg" alt="" /> -->
               <h1>AWS</h1>
             </div>
             <div class="card-body">
@@ -264,6 +276,7 @@
         <div class="itames">
           <div class="card">
             <div class="heads">
+              <!-- <img src="../../assets/azure.svg" alt="" /> -->
               <h1>Azure</h1>
             </div>
             <div class="card-body">
@@ -283,6 +296,7 @@
         <div class="itames">
           <div class="card">
             <div class="heads">
+              <!-- <img src="../../assets/google-cloud.svg" alt="" /> -->
               <h1>GCP</h1>
             </div>
             <div class="card-body">
@@ -302,6 +316,7 @@
       </div>
     </div>
   </section>
+
   <section class="cloud_service_solutions_mobile" id="cloud_service_mobile">
     <div class="container">
       <div class="head">
@@ -392,22 +407,15 @@
                 <h1>Databricks</h1>
               </div>
               <div class="card-body">
-                <ul>
-                  <li>
-                    ELT Solution provided on Azure, Azure and<br />
-                    GCP
-                  </li>
+                <ul class="ul-item">
+                  <li>ELT Solution provided on Azure, Azure and GCP</li>
                   <li>
                     Databricks Spark Cluster
                     <ul>
-                      <li>
-                        Cluster Types - All Purpose and Job<br />
-                        Clusters
-                      </li>
+                      <li>Cluster Types - All Purpose and Job Clusters</li>
                       <li>Cluster Configuration</li>
                       <li>
-                        Cluster Mode - Standard, High<br />Concurrency, Single
-                        Node
+                        Cluster Mode - Standard, High Concurrency, Single Node
                       </li>
                       <li>Cluster Pools</li>
                     </ul>
@@ -434,30 +442,23 @@
                   <li>ELT Solution provided on AWS, Azure and GCP</li>
                   <li>Loading Data from S3/ADLS/GCS</li>
                   <li>
-                    DML for bulk data loading/unloading using<br />
-                    COPY command
+                    DML for bulk data loading/unloading using COPY command
                   </li>
-                  <li>
-                    Snow pipe - Load data fast, analyze even<br />
-                    faster
-                  </li>
+                  <li>Snow pipe - Load data fast, analyze even faster</li>
                   <li>Snowflake Connector for Python & Spark</li>
                   <li>Accelerating BI Queries with Caching</li>
                   <li>
-                    Eliminating Concurrency Issues with<br />Snowflake Virtual
+                    Eliminating Concurrency Issues with Snowflake Virtual
                     Warehouses
                   </li>
                   <li>Data Protection with Time Trave</li>
                   <li>Zero copy cloning</li>
                   <li>Standard and Extended SQL</li>
                   <li>
-                    Advanced DML such as multi-table INSERT,<br />
-                    MERGE, and multi-merge
+                    Advanced DML such as multi-table INSERT, MERGE, and
+                    multi-merge
                   </li>
-                  <li>
-                    Statistical and Analytical aggregate<br />
-                    functions
-                  </li>
+                  <li>Statistical and Analytical aggregate functions</li>
                   <li>Windowing functions</li>
                 </ul>
               </div>
@@ -472,10 +473,7 @@
               </div>
               <div class="card-body">
                 <ul>
-                  <li>
-                    Data Pipeline Solution on AWS, Azure and<br />
-                    GCP
-                  </li>
+                  <li>Data Pipeline Solution on AWS, Azure and GCP</li>
                   <li>Dynamic DAG Authoring using task groups</li>
                   <li>DAG Dependencies</li>
                   <li>Airflow Variables</li>
@@ -497,13 +495,13 @@
               <div class="card-body">
                 <ul>
                   <li>
-                    Types of Materializations, Incremental<br />
-                    Models & Ephermal Models
+                    Types of Materializations, Incremental Models & Ephermal
+                    Models
                   </li>
                   <li>Hooks, Snapshots & Macros</li>
                   <li>
-                    Integrate DBT with Snowflake, Databricks,<br />
-                    BigQuery, RedShift & Apache Spark
+                    Integrate DBT with Snowflake, Databricks, BigQuery, RedShift
+                    & Apache Spark
                   </li>
                 </ul>
               </div>

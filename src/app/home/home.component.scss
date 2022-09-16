@@ -11,11 +11,10 @@
   }
   .carousel-item {
     background-image: linear-gradient(
-        90deg,
-        rgba(0, 14, 94, 0.747) 0%,
-        rgba(6, 16, 151, 0.527) 100%
-      ),
-      url("https://wwwprod.lwinternal.com/wp-content/uploads/2017/12/cloud-dedicated-hero.jpg");
+      90deg,
+      $primary-background-color 0%,
+      $primary-background-color 100%
+    );
     padding: 25rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,15 +78,9 @@
 
 // ========================== Hero_wrap Start ========================== //
 .hero_wrap {
-  // background-color: $primary-background-color;
-  // border-bottom-right-radius: 200px;
-
   // ======= Architecture Start ======= //
   .Architecture {
     padding: 5rem 0;
-    &::after {
-      background-color: #000c66;
-    }
     .head {
       min-height: 54px;
       text-align: center;
@@ -104,6 +97,7 @@
         text-align: center;
         padding: 1rem 0;
         position: relative;
+
         &::after {
           position: absolute;
           content: "";
@@ -111,7 +105,6 @@
           left: 8em;
           background-color: $primary-background-color;
           border-left: 0;
-          // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
           width: 50%;
           height: 3px;
         }
@@ -132,13 +125,13 @@
         h2 {
           background: linear-gradient(
             6deg,
-            rgb(30 26 108) 0%,
-            rgb(9, 9, 121) 35%,
+            $primary-background-color 0%,
+            $primary-background-color 35%,
             #4a80ec 100%
           );
           position: relative;
           left: -20px;
-          color: #fff;
+          color: $primary-color-white;
           font-weight: bold;
           text-align: center;
         }
@@ -183,20 +176,7 @@
           border-color: #196d78 transparent transparent #196d78;
         }
         ul {
-          margin: 1em 0;
-          li {
-            margin: 0.5em;
-            margin-left: 3em;
-            list-style: none;
-
-            &:before {
-              content: "\f006";
-              font-family: "FontAwesome";
-              float: left;
-              margin-left: -1.5em;
-              color: #0074d9;
-            }
-          }
+          @include card_list;
         }
       }
     }
@@ -233,7 +213,6 @@
           left: 8em;
           background-color: $primary-background-color;
           border-left: 0;
-          // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
           width: 50%;
           height: 3px;
         }
@@ -244,18 +223,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-items: center;
-        background-color: #000c66;
+        background-color: $primary-background-color;
         padding: 2rem 1rem;
         column-gap: 2rem;
 
         h1 {
           font-size: 1.2rem;
-
-          color: #fff;
+          color: $primary-color-white;
         }
       }
       .body_info {
-        background-color: #fff;
+        background-color: $primary-color-white;
         .items {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -263,14 +241,14 @@
           align-items: stretch;
           column-gap: 2rem;
           padding: 2rem 1rem;
-          background-color: #ffffff;
+          background-color: $primary-color-white;
 
           .doc {
             a {
-              background-color: #000c66;
+              background-color: $primary-background-color;
               padding: 1rem 1.5rem;
               font-size: 1rem;
-              color: #fff;
+              color: $primary-color-white;
               position: relative;
               top: 52px;
               border-radius: 50px;
@@ -351,25 +329,35 @@
         height: 100%;
         border: none;
         box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+        background-color: #fff;
+
         .heads {
-          @include card_head;
+          border-bottom-left-radius: 100%;
+          border-bottom-right-radius: 100%;
+          background: linear-gradient(
+            6deg,
+            #000e9c 0%,
+            #000e9c 35%,
+            #4a80ec 100%
+          );
+          padding: 3rem;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+
+          h1 {
+            color: $primary-color-white;
+            font-size: 2.6rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+          img {
+            width: 10%;
+            background-color: $primary-color-white;
+          }
         }
         .card-body {
           ul {
-            margin: 0.5em 0;
-            li {
-              margin: 0.5em;
-              margin-left: 3em;
-              list-style: none;
-
-              &:before {
-                content: "\f006";
-                font-family: "FontAwesome";
-                float: left;
-                margin-left: -1.5em;
-                color: #0074d9;
-              }
-            }
+            @include card_list;
           }
         }
       }
@@ -387,7 +375,7 @@
       margin-top: 0;
       margin-bottom: 0;
       font-weight: 400;
-      color: #ffffff;
+      color: $primary-color-white;
       letter-spacing: 0;
       text-align: center;
     }
@@ -459,12 +447,30 @@
         border-radius: 0;
         border: none;
         box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-
+        padding-bottom: 1rem;
         .heads {
-          @include card_head;
+          border-bottom-left-radius: 100%;
+          border-bottom-right-radius: 100%;
+          background: linear-gradient(
+            6deg,
+            #000e9c 0%,
+            #000e9c 35%,
+            #4a80ec 100%
+          );
+          padding: 3rem;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+
+          h1 {
+            color: $primary-color-white;
+            font-size: 2.6rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 1px;
+          }
         }
         .card-body {
           overflow-y: scroll;
+
           ul {
             @include card_list;
           }
@@ -533,9 +539,6 @@
 
   // ========================== Hero_wrap Start ========================== //
   .hero_wrap {
-    // background-color: $primary-background-color;
-    // border-bottom-right-radius: 200px;
-
     // ======= Architecture Start ======= //
     .Architecture {
       padding: 5rem 0;
@@ -547,19 +550,28 @@
         text-align: center;
         line-height: 34px;
         position: relative;
-        background-color: $primary-background-color;
-        border-left: 0;
-        clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
-        margin-bottom: 5rem;
+
         h1 {
           font-family: "Poppins", sans-serif;
           margin-top: 0;
           margin-bottom: 0;
           font-weight: 400;
-          color: $primary-color-white;
+          color: $primary-background-color;
           letter-spacing: 0;
           text-align: center;
           padding: 1rem 0;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            content: "";
+            top: 2em;
+            left: 8em;
+            background-color: $primary-background-color;
+            border-left: 0;
+            width: 50%;
+            height: 3px;
+          }
         }
       }
 
@@ -571,7 +583,6 @@
         column-gap: 10rem;
 
         .service_box {
-          background-color: #99c2f1ad;
           box-shadow: 0 0 10px -2px #00000036;
           width: 100%;
           .first,
@@ -584,7 +595,7 @@
             );
             position: relative;
             left: -20px;
-            color: #fff;
+            color: $primary-color-white;
             font-weight: bold;
             text-align: center;
           }
@@ -634,7 +645,6 @@
               margin: 0.5em;
               margin-left: 3em;
               list-style: none;
-
               &:before {
                 content: "\f006";
                 font-family: "FontAwesome";
@@ -668,7 +678,7 @@
           font-weight: 600;
           letter-spacing: 0.05px;
           text-align: center;
-          color: #fff;
+          color: $primary-color-white;
         }
       }
       .body_layout {
@@ -680,7 +690,7 @@
             font-size: 1.7rem;
             font-weight: 500;
             letter-spacing: 0.05px;
-            color: #fff;
+            color: $primary-color-white;
             padding-bottom: 1rem;
           }
           iframe {
@@ -695,7 +705,7 @@
             margin-top: 1rem;
 
             a {
-              color: #fff;
+              color: $primary-color-white;
               font-size: 1.2rem;
             }
           }
@@ -728,6 +738,7 @@
           height: 100%;
           border: none;
           box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          padding-bottom: 1rem;
           .heads {
             @include card_head;
           }
@@ -759,24 +770,29 @@
         background-color: #000c66;
       }
       .head {
-        min-height: 54px;
-        text-align: center;
-        line-height: 34px;
-        position: relative;
-        background-color: $primary-background-color;
-        border-left: 0;
-        clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
-        margin-bottom: 2rem;
+        margin: 0 0 3rem;
         h1 {
           font-family: "Poppins", sans-serif;
           margin-top: 0;
           margin-bottom: 0;
-          font-weight: 400;
-          color: $primary-color-white;
+          font-weight: 500;
+          color: $primary-background-color;
           letter-spacing: 0;
           text-align: center;
-          font-size: 1rem;
-          padding: 1rem;
+          padding: 1rem 0;
+          position: relative;
+          font-size: 1.2rem;
+
+          &::after {
+            position: absolute;
+            content: "";
+            top: 2.5em;
+            left: 7.7em;
+            background-color: $primary-background-color;
+            border-left: 0;
+            width: 25%;
+            height: 3px;
+          }
         }
       }
 
@@ -789,7 +805,6 @@
         row-gap: 2rem;
 
         .service_box {
-          background-color: #99c2f1ad;
           box-shadow: 0 0 10px -2px #00000036;
           width: 80%;
           margin: 0px 3rem;
@@ -803,7 +818,7 @@
             );
             position: relative;
             left: -20px;
-            color: #fff;
+            color: $primary-color-white;
             font-weight: bold;
             text-align: center;
           }
@@ -880,20 +895,37 @@
     .clients_mobile {
       display: block;
       padding: 3rem 0 2rem;
-      background-color: rgb(201, 230, 243);
+      background-color: #000c6634;
       .head {
-        padding-bottom: 3rem;
+        margin: 0 0 2rem;
+        padding: 0;
         h1 {
-          font-size: 2rem;
-          font-weight: 600;
-          letter-spacing: 0.05px;
-          text-align: center;
+          font-family: "Poppins", sans-serif;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 500;
           color: $primary-background-color;
+          letter-spacing: 0;
+          text-align: center;
+          padding: 1rem 0;
+          position: relative;
+          font-size: 1.2rem;
+
+          &::after {
+            position: absolute;
+            content: "";
+            top: 2.5em;
+            left: 8em;
+            background-color: $primary-background-color;
+            border-left: 0;
+            width: 25%;
+            height: 3px;
+          }
         }
       }
       .body_layout {
         .item {
-          background-color: #fff;
+          background-color: $primary-color-white;
           padding: 0;
           margin-bottom: 2rem;
           padding: 2rem 1rem;
@@ -901,7 +933,7 @@
             font-size: 1.7rem;
             font-weight: 500;
             letter-spacing: 0.05px;
-            color: #000c66;
+            color: $primary-background-color;
             padding-bottom: 1rem;
           }
           iframe {
@@ -910,14 +942,14 @@
           }
           .button {
             text-align: center;
-            background-color: #4a80ec;
+            background-color: $primary-background-color;
             width: 100%;
             border-radius: 50px;
             padding: 0.7rem;
             margin-top: 1rem;
 
             a {
-              color: #fff;
+              color: $primary-color-white;
               font-size: 1.1rem;
             }
           }
@@ -954,6 +986,7 @@
           height: 100%;
           border: none;
           box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          padding-bottom: 1rem;
           .heads {
             padding: 0.5rem;
             h1 {
@@ -976,14 +1009,32 @@
   .cloud_service_solutions_mobile {
     display: block;
     padding: 2rem 3rem 5rem;
-    // border-bottom-right-radius: 50px;
-    // border-top-left-radius: 50px;
 
     .head {
-      padding-bottom: 1remrem;
+      margin: 0 0 3rem;
+      padding: 0;
       h1 {
-        color: #000c66;
-        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        color: $primary-background-color;
+        letter-spacing: 0;
+        text-align: center;
+        padding: 1rem 0;
+        position: relative;
+        font-size: 1.2rem;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 2.5em;
+          left: 5.5em;
+          background-color: $primary-background-color;
+          border-left: 0;
+          width: 25%;
+          height: 3px;
+        }
       }
     }
     .body_layout {
@@ -999,6 +1050,8 @@
           height: 100%;
           border: none;
           box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          background-color: rgba(0, 12, 102, 0.2039215686);
+          padding-bottom: 1rem;
           .heads {
             @include card_head;
           }
@@ -1006,7 +1059,21 @@
             overflow-y: scroll;
             scroll-behavior: smooth;
             ul {
-              @include card_list;
+              li {
+                margin: 0.5em;
+                margin-left: 3em;
+                list-style: none;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                text-align: start;
+                &:before {
+                  content: "\f006";
+                  font-family: "FontAwesome";
+                  float: left;
+                  margin-left: -1.5em;
+                  color: $primary-background-color;
+                }
+              }
             }
           }
         }
@@ -1017,11 +1084,32 @@
   //  ========================== Data_service Start ========================== //
   .data_engineer_solution {
     padding: 3rem 3rem 5rem;
-    background-color: rgb(201, 230, 243);
+    background-color: #000c6634;
     .head {
-      padding-bottom: 1rem;
+      margin: 0 0 3rem;
+      padding: 0;
       h1 {
-        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        color: $primary-background-color;
+        letter-spacing: 0;
+        text-align: center;
+        padding: 1rem 0;
+        position: relative;
+        font-size: 1.2rem;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 3.5em;
+          left: 6em;
+          background-color: $primary-background-color;
+          border-left: 0;
+          width: 25%;
+          height: 3px;
+        }
       }
     }
     .body_layout {
@@ -1034,12 +1122,11 @@
           border: none;
           box-shadow: 0 0 10px rgb(0 0 0 / 10%);
           border: 1px solid #000c662d;
+          padding-bottom: 1rem;
+
           .heads {
-            // padding: 0.5rem;
-            // h1 {
-            //   font-size: 1rem;
-            // }
             @include card_head;
+            border-radius: 0;
           }
           .card-body {
             overflow-y: scroll;

@@ -26,12 +26,7 @@
       color: $primary-background-color;
     }
     ul {
-      padding-left: 2rem;
-      li {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-        text-align: start;
-      }
+      @include card_list;
     }
   }
 }
@@ -53,7 +48,7 @@
     }
     .body_layout {
       padding-top: 1rem;
-      padding-left: 2rem;
+      padding-left: 0;
       h4 {
         font-style: italic;
         font-size: 1rem;
@@ -63,11 +58,18 @@
         padding-top: 1rem;
       }
       ul {
-        padding-left: 0;
         li {
-          font-size: 0.9rem;
-          line-height: 1.5rem;
-          text-align: start;
+          margin: 0.5em;
+          margin-left: 3em;
+          list-style: none;
+          font-size: 0.8rem;
+          &:before {
+            content: "\f006";
+            font-family: "FontAwesome";
+            float: left;
+            margin-left: -1.5em;
+            color: $primary-background-color;
+          }
         }
       }
     }

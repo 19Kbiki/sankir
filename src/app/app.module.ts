@@ -10,6 +10,9 @@ import { PocComponent } from './poc/poc.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { FaqComponent } from './faq/faq.component';
+import { LoginComponent } from './login/login.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { AboutComponent } from './about/about.component';
     NavComponent,
     FooterComponent,
     AboutComponent,
+    FaqComponent,
+    LoginComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
