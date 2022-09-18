@@ -163,7 +163,7 @@ export class HomeComponent implements OnInit {
       ],
 
       video:
-        'https://i.vimeocdn.com/video/656988822-4dfdc935f3686c20ed284d388dfa2056c243349affef32fd44f991af5a01b763-d?mw=300&mh=169',
+        'https://i.vimeocdn.com/video/656988822-4dfdc935f3686c20ed284d388dfa2056c243349affef32fd44f991af5a01b763-d?mw=270&mh=130',
       image: 'AWS-CDK-POC-Readme',
       url: '',
     },
@@ -350,9 +350,11 @@ export class HomeComponent implements OnInit {
       },
       400: {
         items: 2,
+        margin: 10,
       },
       740: {
         items: 3,
+        margin: 10,
       },
       940: {
         items: 3,

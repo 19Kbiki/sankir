@@ -117,14 +117,16 @@
       <div class="body_layout">
         <div class="service_box">
           <h2>{{ leveName }}</h2>
-          <ul *ngFor="let service of Services">
-            <li>
-              {{ service.name }}
-              <ul *ngFor="let child of service.childLi">
-                <li>{{ child.nameLi }}</li>
-              </ul>
-            </li>
-          </ul>
+          <div class="body-cont">
+            <ul *ngFor="let service of Services">
+              <li>
+                {{ service.name }}
+                <ul *ngFor="let child of service.childLi">
+                  <li>{{ child.nameLi }}</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="service_box">
           <h2>{{ ArchiName }}</h2>
@@ -170,17 +172,16 @@
                 {{ product.productsName }}
               </li>
             </ul>
-            <!-- <iframe
-              src="https://player.vimeo.com/video/746319339?h=8732b35cd1"
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe> -->
-            <iframe
-              [src]="safeUrl(client.video)"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <div class="video">
+              <iframe
+                [src]="safeUrl(client.video)"
+                width="292"
+                height="150"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
             <div class="doc">
               <a target="_blank" [href]="client.url">{{ client.image }}</a>
             </div>

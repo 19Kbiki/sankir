@@ -203,7 +203,134 @@ header {
     }
   }
 }
+@media screen and (max-width: 1199px) {
+  header {
+    padding: 2rem 0;
 
+    background-color: $primary-background-color;
+    .decstop_nav {
+      .nav_bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+          h1 {
+            a {
+              color: $primary-color-white;
+            }
+
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: "Kanit", sans-serif;
+            letter-spacing: 0.05px;
+          }
+        }
+        .menu {
+          .links {
+            float: right;
+            margin-right: 30px;
+            position: relative;
+
+            li {
+              float: left;
+              list-style: none;
+              position: relative;
+              margin: 5px;
+              display: inline-block;
+
+              & > a {
+                position: relative;
+                display: inline-block;
+                padding: 0 5px;
+                line-height: 30px;
+                height: 30px;
+                color: $primary-color-white;
+                font-size: 1rem;
+                font-weight: 500;
+
+                &[class^="trigger-"] {
+                  padding-right: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav {
+    display: none;
+  }
+
+  .toggle_menu {
+    display: none;
+  }
+  .header_change {
+    position: fixed;
+    background-color: $primary-background-color;
+    width: 100%;
+    z-index: 4;
+    padding: 2rem 0;
+    top: 0;
+    transform: translateY(0);
+    filter: drop-shadow(rgba(0, 8, 36, 0.05) 0px 4px 8px);
+  }
+  .decstop_nav .header_change {
+    .nav_bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        h1 {
+          color: $primary-background-color;
+          font-size: 2.1rem;
+          font-weight: 600;
+          font-family: "Kanit", sans-serif;
+          letter-spacing: 0.05px;
+        }
+      }
+      .menu {
+        ul {
+          li {
+            display: inline-block;
+            padding: 0 1rem;
+            list-style: none;
+            a {
+              font-size: 0.6rem;
+              font-weight: 500;
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+              color: #fff;
+            }
+            ul {
+              visibility: hidden;
+              position: absolute;
+              background-color: #fff !important;
+              top: 4.8em;
+
+              li {
+                display: block;
+                padding: 1rem;
+                a {
+                  color: $primary-background-color;
+                  text-transform: capitalize;
+                  letter-spacing: 0;
+                  font-size: 1rem;
+                }
+              }
+            }
+            &:hover ul {
+              visibility: visible;
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ========== Responsive Start =================== //
+}
 // ========== Responsive Start =================== //
 
 @media screen and (max-width: 991px) {
