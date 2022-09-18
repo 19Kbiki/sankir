@@ -74,6 +74,15 @@ export class HomeComponent implements OnInit {
     {
       name: 'Quickly testing the solution on SanKir"s AWS/Azure/GCP Cloud Infrastructure',
     },
+    {
+      name: 'End-to-End UI Testing Automation using Cypress',
+    },
+    {
+      name: 'Mobile App Development - Android, iOS',
+    },
+    {
+      name: 'Desktop Apps',
+    },
   ];
 
   clientTables = [

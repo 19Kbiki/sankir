@@ -55,8 +55,8 @@ export class AboutComponent implements OnInit {
 
   selfInfo = [
     {
-      name: 'Kiran Hiremath, Director',
-      experince: 'IT Professional with 27+ years of Experience',
+      name: 'Kiran Hiremath is Director and Co-Founder of Sankir Technologies Pvt Ltd. ',
+      experince: '27+ years of Experience in Software Development & Management',
       subExperinces: [
         {
           subExperince:
@@ -77,13 +77,15 @@ export class AboutComponent implements OnInit {
             {
               name: 'Databricks on Azure & AWS',
             },
+            {
+              name: 'Experience in Pre-Sales, CoE, Alliance, Software Development & Management',
+            },
+            {
+              name: 'Engineering Graduate in Electronics & communication from University of Mysore',
+            },
           ],
         },
 
-        {
-          subExperince:
-            'Experience in Pre-Sales, CoE, Alliance, Software Development & Management',
-        },
         {
           subExperince:
             'Worked for TCS, Wipro and has interfaced with MNCs like Nortel, Motorola and Alcatel-Lucent',
@@ -94,9 +96,7 @@ export class AboutComponent implements OnInit {
             {
               name: 'Data-driven Contact Centre solution in Healthcare, Banking and Telcos',
             },
-            {
-              name: 'Cloud Storage and Datawarehouse – AWS S3, Athena, ADLS, GCS, BigQuery',
-            },
+
             {
               name: 'Data Migration, ETL to Salesforce.com application from Siebel CRM',
             },
@@ -110,7 +110,7 @@ export class AboutComponent implements OnInit {
   ];
   sanjayselfInfo = [
     {
-      name: 'Sanjay Bheemasenrao, Director',
+      name: 'Sanjay Bheemasenarao is Director and Co-Founder of Sankir Technologies Pvt Ltd.',
       experince: '27+ years of experience in building products and services',
       subExperinces: [
         {
@@ -129,24 +129,20 @@ export class AboutComponent implements OnInit {
               name: 'Data Engineering Pipeline – Architecture, Orchestration, Optimization and Monitoring',
             },
             {
-              name: 'Architecting Distributed Computing solutions using Apache Spark, Hive, BigQuery and AWS Athena',
+              name: 'Big Data Technologies: Hadoop, HDFS, Spark, Scala, Python, Hivea',
             },
             {
-              name: 'Databricks on Azure & AWS',
+              name: 'Architecting Distributed Computing solutions using Apache Spark, Hive, BigQuery, AWS Athena, RedShift, DBT, AWS Lambda, Cloud Watch, Cloud Build and Apache Airflow.',
             },
           ],
         },
         {
           subExperince:
-            'Experience in Pre-Sales, CoE, Alliance, Software Development & Management',
+            'Engineering Graduate in Electronics & communication from University of Mysore',
         },
         {
-          subExperince:
-            'Worked for TCS, Wipro and has interfaced with MNCs like Nortel, Motorola and Alcatel-Lucent',
+          subExperince: 'Worked in Oracle India for 16+ years',
           natedEx: [
-            {
-              name: 'Worked in Oracle India for 16+ years',
-            },
             {
               name: 'Oracle E-Business Release Management expert - 11i to R12.2 ',
             },

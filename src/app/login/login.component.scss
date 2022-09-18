@@ -1,0 +1,190 @@
+@import "../../veriable.scss";
+.login_form {
+  padding: 5rem 0;
+  .heading {
+    padding-bottom: 5rem;
+    h1 {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 600;
+      color: $primary-background-color;
+      position: relative;
+      &::after {
+      }
+    }
+  }
+  .form_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000e9c1f;
+    padding: 5rem 0;
+    form {
+      width: 50%;
+      label {
+        font-size: 1.4rem;
+        span {
+          color: rgb(255, 1, 1);
+          font-weight: bold;
+        }
+      }
+      input {
+        height: 4rem;
+        font-size: 1.5rem;
+      }
+
+      .form-check {
+        display: flex;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 1rem;
+      }
+
+      .log_with {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+        background-color: $primary-background-color;
+        border-radius: 5px;
+        padding: 1rem 0;
+        color: $primary-color-white;
+
+        .imges {
+          width: 5%;
+          img {
+            width: 100%;
+          }
+        }
+        h2 {
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+      }
+      .form-check-input {
+        height: 1rem;
+      }
+      button {
+        width: 100%;
+        background-color: $primary-background-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+      }
+    }
+    .reg_for {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      column-gap: 1rem;
+      h4 {
+        a {
+          color: $primary-background-color;
+          font-size: 1.2rem;
+          font-weight: 600;
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  max-height: 100%;
+  .modal-dialog {
+    top: 15%;
+    margin: 0 50rem;
+    .modal-content {
+      background-color: $primary-background-color;
+      width: 150%;
+      height: 150%;
+      padding: 2rem;
+      .modal-header {
+        text-align: center;
+        border-bottom: none;
+        .btn-close {
+          color: $primary-color-white;
+          background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>");
+          border: 3px solid $primary-color-white;
+          border-radius: 50px;
+          opacity: 1;
+        }
+      }
+      .modal-body {
+        color: $primary-color-white;
+        background-color: #000e9c1f;
+        .heading {
+          h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 600;
+            padding-bottom: 1.2rem;
+          }
+        }
+        form {
+          padding: 3rem 0;
+          label {
+            font-size: 1.4rem;
+            span {
+              color: rgb(255, 1, 1);
+              font-weight: bold;
+            }
+          }
+          input {
+            height: 4rem;
+            font-size: 1.5rem;
+          }
+
+          .form-check {
+            display: flex;
+            padding: 0;
+            justify-content: flex-start;
+            align-items: center;
+            column-gap: 1rem;
+          }
+
+          .log_with {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 1rem;
+            background-color: $primary-background-color;
+            border-radius: 5px;
+            padding: 1rem 0;
+            color: $primary-color-white;
+
+            .imges {
+              width: 5%;
+              img {
+                width: 100%;
+              }
+            }
+            h2 {
+              font-size: 1.4rem;
+              font-weight: 600;
+            }
+          }
+          .form-check-input {
+            height: 1rem;
+          }
+          h4 {
+            text-align: center;
+            font-size: 1rem;
+            padding: 1rem 0;
+          }
+          button {
+            width: 100%;
+            background-color: $primary-color-white;
+            color: $primary-background-color;
+            font-size: 1.5rem;
+            font-weight: 600;
+            padding: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}

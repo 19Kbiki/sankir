@@ -407,8 +407,7 @@ header {
       p {
         font-size: 0.8rem;
         opacity: 0.5;
-        border-bottom: 1px solid #f3f0f040;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
       }
       ul {
         li {
@@ -419,7 +418,7 @@ header {
           background-color: transparent;
           a {
             color: #fff;
-            font-size: 0.8rem;
+            font-size: 1.2rem;
             opacity: 0.5;
           }
         }
@@ -550,6 +549,7 @@ header {
     overflow: hidden;
     overflow-y: scroll;
     height: auto;
+
     .menus {
       background-color: #fff;
       padding: 3rem 0;
@@ -595,51 +595,57 @@ header {
     }
     .bottom {
       padding-top: 3rem;
-    }
-    .add {
-      position: relative;
-      top: 0;
-      bottom: 0;
-      background-color: $primary-background-color;
-      height: auto;
-      color: #fff;
-      padding: 2rem 2rem 0;
-      text-align: center;
-      i {
-        font-size: 0.9rem;
 
-        padding-bottom: 1rem;
-      }
-      h1 {
-        font-size: 1rem;
-        font-weight: 600;
-        padding-bottom: 0.5rem;
-        font-family: "Kanit", sans-serif;
-      }
-      h6 {
-        padding-bottom: 2rem;
-        border-bottom: 1px solid #f3f0f040;
-        font-size: 0.8rem;
-        opacity: 0.5;
-        font-family: "Kanit", sans-serif;
-      }
-      p {
-        font-size: 0.8rem;
-        opacity: 0.5;
-        border-bottom: 1px solid #f3f0f040;
-        padding-bottom: 2rem;
-      }
-      ul {
-        li {
-          border: none;
-          display: inline;
-          padding: 0;
-          margin: 0 0.5rem;
-          background-color: transparent;
-          a {
-            color: #fff;
-            font-size: 0.8rem;
-            opacity: 0.5;
+      position: relative;
+      bottom: 0;
+      top: 85px;
+
+      .add {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        background-color: $primary-background-color;
+        height: auto;
+        color: #fff;
+        padding: 2rem 2rem 0;
+        text-align: center;
+        i {
+          font-size: 0.9rem;
+
+          padding-bottom: 1rem;
+        }
+        h1 {
+          font-size: 1rem;
+          font-weight: 600;
+          padding-bottom: 0.5rem;
+          font-family: "Kanit", sans-serif;
+        }
+        h6 {
+          padding-bottom: 2rem;
+          border-bottom: 1px solid #f3f0f040;
+          font-size: 0.8rem;
+          opacity: 0.5;
+          font-family: "Kanit", sans-serif;
+        }
+        p {
+          font-size: 0.8rem;
+          opacity: 0.5;
+        }
+        ul {
+          border-bottom: 2px solid rgb(100, 100, 100);
+          li {
+            border: none;
+            display: inline;
+            padding: 0;
+            margin: 0 0.5rem;
+            background-color: transparent;
+            a {
+              color: #fff;
+              opacity: 0.5;
+              i {
+                font-size: 1.2rem;
+              }
+            }
           }
         }
       }
