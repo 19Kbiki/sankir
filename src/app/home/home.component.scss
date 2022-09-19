@@ -1513,17 +1513,6 @@
           padding: 1rem 0;
           position: relative;
           font-size: 1.2rem;
-
-          &::after {
-            position: absolute;
-            content: "";
-            top: 2.5em;
-            left: 8em;
-            background-color: $primary-background-color;
-            border-left: 0;
-            width: 25%;
-            height: 3px;
-          }
         }
       }
       .body_layout {

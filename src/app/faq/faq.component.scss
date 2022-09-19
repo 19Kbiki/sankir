@@ -76,3 +76,83 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .faq {
+    padding: 8rem 0;
+    .heading {
+      h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-bottom: 5rem;
+        color: $primary-background-color;
+      }
+    }
+    .accordion {
+      .accordion-item {
+        border: none;
+        border-bottom: 3px solid #000d9c28;
+        border-radius: 0;
+        .accordion-header {
+          .collapsed {
+            height: 3rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $primary-background-color;
+          }
+          .accordion-button {
+            height: 3rem;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: none;
+            border: none;
+          }
+          .accordion-button:not(.collapsed) {
+            background-color: $primary-background-color;
+            color: $primary-color-white;
+            box-shadow: none;
+          }
+        }
+        .accordion-body {
+          background-color: #000d9c23;
+          padding: 1rem;
+          p {
+            font-size: 1rem;
+          }
+          h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 2rem 0;
+            color: $primary-background-color;
+          }
+          ul {
+            padding-left: 5rem;
+            li {
+              font-size: 1rem;
+              font-weight: 400;
+              color: rgba(44, 44, 44, 0.753);
+            }
+          }
+          h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: $primary-background-color;
+            padding-bottom: 2rem;
+          }
+          h3 {
+            font-size: 1rem;
+
+            line-height: 2rem;
+          }
+          h2 {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
