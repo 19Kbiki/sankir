@@ -8,7 +8,10 @@ import * as AOS from 'aos';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor(public sanitizer: DomSanitizer) {}
+  safeSrc: SafeResourceUrl;
+  constructor(public sanitizer: DomSanitizer) {
+    this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/watch?v=uudHxXc7XPo");
+  }
 
   // hero_wrap array
   ArchiName = 'Solution Architecture';
@@ -40,7 +43,7 @@ export class HomeComponent implements OnInit {
 
   // Architecture arry end
 
-  leveName = 'Leverage SanKir Services in';
+  leveName = 'SanKir Consultancy Services';
   Services = [
     {
       name: 'End-to-End DE Automation using AWS CDK Toolkit and Terraform',
@@ -99,7 +102,7 @@ export class HomeComponent implements OnInit {
 
       video: 'https://player.vimeo.com/video/747633649?h=dd8c2698a0',
       image: 'Airflow-POC-Readme',
-      url: 'https://www.sankir.com/wp-content/uploads/2022/09/readme_poc_Airflow.pdf',
+      url: '../../assets/readme_poc_Airflow.pdf',
     },
 
     {
@@ -120,7 +123,7 @@ export class HomeComponent implements OnInit {
 
       image: 'Databricks-POC-Readme',
 
-      url: 'https://www.sankir.com/wp-content/uploads/2022/09/databricks-abfs-poc-README.pdf',
+      url: '../../assets//databricks-abfs-poc-README.pdf',
     },
     {
       name: 'Loading retail data from AWS S3 file storage into Snowflake tables',
@@ -143,7 +146,7 @@ export class HomeComponent implements OnInit {
 
       video: 'https://player.vimeo.com/video/746053538?h=35e05ea07a',
       image: 'Snowflake-POC-Readme',
-      url: 'https://www.sankir.com/wp-content/uploads/2022/09/snowflake-poc-README.pdf',
+      url: '../../assets/snowflake-poc-README.pdf',
     },
 
     {
@@ -393,3 +396,4 @@ export class HomeComponent implements OnInit {
     nav: true,
   };
 }
+

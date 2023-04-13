@@ -95,7 +95,7 @@
     <div class="carousel-item">
       <div class="carousel-caption">
         <div class="info">
-          <h5>Accelerating Data Engineering Solution on Cloud</h5>
+          <h5>Accelerating  Data Engineering Solution on Cloud</h5>
 
           <img
             src="https://barakahit.net/html/Techmax/assets/img/home-font.png"
@@ -112,12 +112,7 @@
   <section class="Architecture" id="Architecture">
     <div class="container">
       <div class="head">
-        <h1>Accelerating Data Engineering Solution on Cloud</h1>
-      
-          <a href="../../assets/SanKir-Capabilities-2_9.pdf" download
-            >Download SanKir Capabilities Brochure</a
-          >
-        
+        <h1>Consultancy</h1>
       </div>
       <div class="body_layout">
         <div class="service_box">
@@ -188,7 +183,7 @@
               ></iframe>
             </div>
             <div class="doc">
-              <a target="_blank" [href]="client.url" download>{{ client.image }}</a>
+              <a target="_blank" [href]="client.url">{{ client.image }}</a>
             </div>
           </div>
         </div>
@@ -213,7 +208,7 @@
             ></iframe>
           </div>
           <div class="button">
-            <a href="../../assets/snowflake-poc-README.pdf" download
+            <a href="https://www.sankir.com/snowflake-poc-readme/"
               >Snowflake-POC-Readme</a
             >
           </div>
@@ -228,7 +223,7 @@
             ></iframe>
           </div>
           <div class="button">
-            <a href="../../assets//databricks-abfs-poc-README.pdf" download
+            <a href="https://www.sankir.com/databricks-abfs-poc-readme/"
               >Databricks-POC-Readme</a
             >
           </div>
@@ -243,7 +238,7 @@
             ></iframe>
           </div>
           <div class="button">
-            <a href="../../assets/readme_poc_Airflow.pdf" download
+            <a href="https://www.sankir.com/readme_poc_airflow/"
               >Airflow-POC-Readme</a
             >
           </div>
@@ -399,8 +394,6 @@
   </section>
 </div>
 
-
-
 <section class="data_engineer_solution" id="data_engineer">
   <div class="container">
     <div class="head">
@@ -517,110 +510,6 @@
           </div>
         </ng-template>
       </owl-carousel-o>
-    </div>
-  </div>
-</section>
-
-<section class="data_engineer_solution_rod" id="data_engineer">
-  <div class="container">
-    <div class="head">
-      <h1>Data Engineering Courses for Corporate and IT Professionals</h1>
-      <p>* pro-Spark : Self paced online course on Data Engineering on Cloud </p>
-      <p>* Opportunity to experience a Data Engineering Project on Cloud  with hands-on approach</p>
-      <p>* Learn Distributed Computing using Apache Spark</p>
-      <p>* Create Data Pipeline on Cloud</p>
-      <p>* Explore Retail Data set in detail and define Key Performance Indicators </p>
-      <p>* Design and Implement Data Validation and Transformation using Apache Spark</p>
-      <p>* Download Project Code </p>
-      <p>* Test Build and Deploy Spark Application</p>
-      <p>* Become proficient in Data Engineering on Cloud</p>
-   
-      <iframe class="w-100" height="600" src="https://www.youtube.com/embed/uudHxXc7XPo" title="pro-spark-aws. Data Engineering project on AWS  using Apache Spark/Scala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    
-    <div class="body_layout">
-    
-       <div class="wrap">
-
-         <div class="iteams">
-           <div class="card">
-             <div class="heads">
-               <h1>pro-Spark-AWS</h1>
-             </div>
-             <div class="card-body">
-               <ul class="ul-item">
-                 <li>Develop connectors to Amazon S3, AWS EMR</li>
-                 <li>
-                   Design and implement EC 2 and RBAC using IAM
-                
-                 </li>
-                 <li>   Design Data Lake with Amazon S3
-                   
-                  </li>
-                 <li> Create AWS EMR Spark Cluster
-                   
-                   </li>
-                 <li>Query External Tables using Amazon Athena</li>
-               </ul>
-             </div>
-           </div>
-         </div>
-    
-         <div class="iteams">
-           <div class="card">
-             <div class="heads">
-               <h1>pro-Spark-GCP</h1>
-             </div>
-             <div class="card-body">
-               <ul>
-                 <li>Develop connectors to Google Cloud Storage, BigQuery, Dataproc</li>
-                 <li>
-                   Design and implement RBAC using Service Account creation in IAM
-                  </li>
-                 <li>
-                    
-                   Design Data Lake with Google Cloud Storage
-          
-                 </li>
-                 <li>          
-                   Create Google Dataproc Spark Cluster</li>
-                 <li>                     
-                   Query results in BigQuery Tables</li>
-                
-               </ul>
-             </div>
-           </div>
-         </div>
-   
-         <div class="iteams">
-           <div class="card">
-             <div class="heads">
-               <h1>pro-Spark-Azure</h1>
-             </div>
-             <div class="card-body">
-               <ul>
-                 <li>Develop connectors to ADLS, Azure Synapse, Azure Databricks</li>
-                 <li>
-                   Design and implement RBAC using Access Keys and SSA Tokens
-                  </li>
-                 <li>  
-                   Design Data Lake with ADLS</li>
-                 <li>     
-                   Create Azure Databricks Spark Cluster
-                 </li>
-                 <li>   
-                   Query External Tables using Azure Synapse Analytics</li>
-               </ul>
-             </div>
-           </div>
-         </div>
-       </div>
-
-
-    </div>
-    <div class="button">
-
-      <a href="../../assets/SanKir-Courses-Brochure-v2-0.pdf" download> Download SanKir Courses Brochure</a>
     </div>
   </div>
 </section>

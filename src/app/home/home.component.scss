@@ -95,7 +95,7 @@
         color: $primary-background-color;
         letter-spacing: 0;
         text-align: center;
-        padding: 1rem 0;
+        padding: 1rem 0 ;
         position: relative;
 
         &::after {
@@ -109,6 +109,17 @@
           height: 3px;
         }
       }
+      
+        a {
+          background-color: $primary-background-color;
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+          color: $primary-color-white;
+          position: relative;
+          top: 52px;
+          border-radius: 50px;
+        }
+      
     }
 
     .body_layout {
@@ -434,17 +445,21 @@
       text-align: center;
       padding: 1rem 0;
       position: relative;
-      &::after {
-        position: absolute;
-        content: "";
-        top: 2em;
-        left: 8em;
-        background-color: $primary-background-color;
-        border-left: 0;
-        // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
-        width: 50%;
-        height: 3px;
-      }
+      // &::after {
+      //   position: absolute;
+      //   content: "";
+      //   top: 2em;
+      //   left: 8em;
+      //   background-color: $primary-background-color;
+      //   border-left: 0;
+      //   // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
+      //   width: 50%;
+      //   height: 3px;
+      // }
+    }
+    p{
+      font-size: 1em;
+      line-height: 2em;
     }
   }
   .body_layout {
@@ -470,7 +485,7 @@
 
           h1 {
             color: $primary-color-white;
-            font-size: 2.6rem;
+            font-size: 2rem;
             font-weight: 600;
             text-align: center;
             letter-spacing: 1px;
@@ -484,6 +499,112 @@
           }
         }
       }
+    }
+  }
+  .button{
+    text-align: center;
+    a {
+      background-color: $primary-background-color;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      color: $primary-color-white;
+      position: relative;
+      top: 52px;
+      border-radius: 50px;
+    }
+  }
+}
+.data_engineer_solution_rod{
+  
+  padding: 3rem 5rem 5rem;
+  .head {
+    min-height: 54px;
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 5rem;
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 400;
+      color: $primary-background-color;
+      letter-spacing: 0;
+      text-align: left;
+      padding: 1rem 0;
+      position: relative;
+      // &::after {
+      //   position: absolute;
+      //   content: "";
+      //   top: 2em;
+      //   left: 8em;
+      //   background-color: $primary-background-color;
+      //   border-left: 0;
+      //   // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
+      //   width: 50%;
+      //   height: 3px;
+      // }
+    }
+    p{
+      font-size: 1em;
+       line-height: 2em;
+      text-align: left;
+    }
+    iframe{
+      margin-top: 2em;
+    }
+  }
+  .body_layout {
+    .wrap{
+      display: flex;
+      column-gap: 2em;
+    }
+    .iteams {
+      .card {
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+        padding-bottom: 1rem;
+        .heads {
+          border-bottom-left-radius: 100%;
+          border-bottom-right-radius: 100%;
+          background: linear-gradient(
+            6deg,
+            #000e9c 0%,
+            #000e9c 35%,
+            #4a80ec 100%
+          );
+          padding: 3rem;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+
+          h1 {
+            color: $primary-color-white;
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+        }
+        .card-body {
+
+          ul {
+            @include card_list;
+          }
+        }
+      }
+    }
+  }
+  .button{
+    text-align: center;
+    a {
+      background-color: $primary-background-color;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      color: $primary-color-white;
+      position: relative;
+      top: 52px;
+      border-radius: 50px;
     }
   }
 }
@@ -700,6 +821,49 @@
 
   //  ========================== Data_service Start ========================== //
   .data_engineer_solution {
+    background-color: #000c662a;
+    padding: 3rem 5rem 5rem;
+    .head {
+      line-height: 34px;
+      margin-bottom: 3rem;
+
+      h1 {
+        font-size: 2rem;
+        &::after {
+          left: 7.2em;
+
+          width: 50%;
+          height: 3px;
+        }
+      }
+    }
+    .body_layout {
+      .iteams {
+        .card {
+          height: 400px;
+
+          .heads {
+            border-bottom-left-radius: 0%;
+            border-bottom-right-radius: 0%;
+            padding: 1rem;
+            h1 {
+              font-size: 1.5rem;
+            }
+          }
+          .card-body {
+            overflow-y: scroll;
+            margin: 1rem 0;
+            ul {
+              li {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .data_engineer_solution-rod {
     background-color: #000c662a;
     padding: 3rem 5rem 5rem;
     .head {
@@ -1373,7 +1537,7 @@
         background-color: #000c66;
       }
       .head {
-        margin: 0 0 3rem;
+        margin: 0 0 6rem;
         h1 {
           font-family: "Poppins", sans-serif;
           margin-top: 0;
@@ -1383,18 +1547,13 @@
           letter-spacing: 0;
           text-align: center;
           padding: 1rem 0;
-          position: relative;
-          font-size: 1.2rem;
+          font-size: 1rem;
 
           &::after {
-            position: absolute;
-            content: "";
-            top: 2.5em;
-            left: 7.7em;
-            background-color: $primary-background-color;
-            border-left: 0;
-            width: 25%;
-            height: 3px;
+          display: none;
+          }
+          a{
+            font-size: 0.2em;
           }
         }
       }
@@ -1485,6 +1644,7 @@
         }
       }
 
+
       /* for product */
     }
     // ======= Architecture End ======= //
@@ -1512,7 +1672,7 @@
           text-align: center;
           padding: 1rem 0;
           position: relative;
-          font-size: 1.2rem;
+          font-size: 2rem;
         }
       }
       .body_layout {
@@ -1732,6 +1892,565 @@
             }
           }
         }
+      }
+    }
+  }
+  .data_engineer_solution_rod{
+  
+    padding: 3rem 0 5rem;
+    .head {
+      min-height: 54px;
+      text-align: center;
+      line-height: 34px;
+      margin-bottom: 5rem;
+  
+      h1 {
+        font-family: "Poppins", sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        color: $primary-background-color;
+        letter-spacing: 0;
+        text-align: left;
+        padding: 1rem 0;
+        position: relative;
+        font-size: 1.2rem;
+        // &::after {
+        //   position: absolute;
+        //   content: "";
+        //   top: 2em;
+        //   left: 8em;
+        //   background-color: $primary-background-color;
+        //   border-left: 0;
+        //   // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
+        //   width: 50%;
+        //   height: 3px;
+        // }
+      }
+      p{
+        font-size: 0.7em;
+        line-height: 1.5em;
+        text-align: left;
+        padding-bottom: 0.5em;
+      }
+    }
+    .body_layout {
+      .wrap{
+        display: flex;
+        column-gap: 2em;
+        flex-direction: column;
+      }
+      .iteams {
+        padding-top: 2rem;
+        .card {
+          height: 100%;
+          overflow: hidden;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          border: 1px solid #000c662d;
+          padding-bottom: 1rem;
+
+          .heads {
+            @include card_head;
+            border-radius: 0;
+          }
+          .card-body {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            ul {
+              li {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+    .button{
+      text-align: center;
+      a {
+        background-color: $primary-background-color;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        color: $primary-color-white;
+        position: relative;
+        top: 52px;
+        border-radius: 50px;
+      }
+    }
+  }
+  //  ========================== Data_service ENd ========================== //
+}
+
+
+@media screen and (max-width: 448px) {
+  // ========================== Banner Start ========================== //
+  .banner {
+    display: none;
+  }
+  // ========================== Banner End ========================== //
+
+  // ========================== Hero_wrap Start ========================== //
+  .hero_wrap {
+    padding-top: 0rem;
+    // ======= Architecture Start ======= //
+    .Architecture {
+      padding: 1rem 0;
+      &::after {
+        background-color: #000c66;
+      }
+      .head {
+        margin: 0 0 6rem;
+        h1 {
+          font-family: "Poppins", sans-serif;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 500;
+          color: $primary-background-color;
+          letter-spacing: 0;
+          text-align: center;
+          padding: 1rem 0;
+          font-size: 1rem;
+
+          &::after {
+          display: none;
+          }
+        }
+       
+
+          a{
+            font-size: 0.7em;
+        }
+        
+      }
+
+      .body_layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: stretch;
+        justify-items: center;
+        column-gap: 10rem;
+        row-gap: 2rem;
+
+        .service_box {
+          box-shadow: 0 0 10px -2px #00000036;
+          width: 80%;
+          margin: 0px 3rem;
+          .first,
+          h2 {
+            background: linear-gradient(
+              6deg,
+              rgb(30 26 108) 0%,
+              rgb(9, 9, 121) 35%,
+              #4a80ec 100%
+            );
+            position: relative;
+            left: -20px;
+            color: $primary-color-white;
+            font-weight: bold;
+            text-align: center;
+          }
+
+          .first {
+            width: 200px;
+            padding: 10px 0;
+            font-size: 20px;
+          }
+
+          .first::after {
+            content: "";
+            height: 100%;
+            width: 10px;
+            position: absolute;
+            right: -6px;
+            top: 0;
+            background-color: #196d78;
+            transform: skew(10deg);
+          }
+
+          .first::before,
+          h2::after,
+          h2::before {
+            content: "";
+            border: 10px solid;
+            border-color: #196d78 #196d78 transparent transparent;
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+          }
+
+          h2 {
+            margin: 40px 0;
+            padding: 20px;
+            width: calc(100% + 40px);
+            font-size: 1.2rem;
+          }
+
+          h2::after {
+            left: auto;
+            right: 0;
+            border-color: #196d78 transparent transparent #196d78;
+          }
+          ul {
+            margin: 1em 0;
+            li {
+              margin: 0.5em;
+              margin-left: 3em;
+              list-style: none;
+              font-size: 0.7rem;
+              &:before {
+                content: "\f006";
+                font-family: "FontAwesome";
+                float: left;
+                margin-left: -1.5em;
+                color: #0074d9;
+              }
+            }
+          }
+        }
+      }
+
+
+      /* for product */
+    }
+    // ======= Architecture End ======= //
+
+    // ======= Client Start ======= //
+    // .clients {
+    //   display: none;
+    // }
+    // ======= Client End ======= //
+
+    .clients_mobile {
+      display: block;
+      padding: 3rem 0 2rem;
+      background-color: #000c6634;
+      .head {
+        margin: 0 0 2rem;
+        padding: 0;
+        h1 {
+          font-family: "Poppins", sans-serif;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 500;
+          color: $primary-background-color;
+          letter-spacing: 0;
+          text-align: center;
+          padding: 1rem 0;
+          position: relative;
+          font-size: 2rem;
+        }
+      }
+      .body_layout {
+        .item {
+          background-color: $primary-color-white;
+          padding: 0;
+          margin-bottom: 2rem;
+          padding: 2rem 1rem;
+          h1 {
+            font-size: 1.7rem;
+            font-weight: 500;
+            letter-spacing: 0.05px;
+            color: $primary-background-color;
+            padding-bottom: 1rem;
+          }
+          iframe {
+            height: 200px;
+            width: 100%;
+          }
+          .button {
+            text-align: center;
+            background-color: $primary-background-color;
+            width: 100%;
+            border-radius: 50px;
+            padding: 0.7rem;
+            margin-top: 1rem;
+
+            a {
+              color: $primary-color-white;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  // ========================== Hero_wrap end ========================== //
+
+  // ========================== Cloud_service Start ========================== //
+  .cloud_service_solutions {
+    display: none;
+    padding: 2rem 3rem 5rem;
+    // border-bottom-right-radius: 50px;
+    // border-top-left-radius: 50px;
+    background-color: rgba(124, 116, 233, 0.199);
+
+    .head {
+      padding-bottom: 0rem;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    .body_layout {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: stretch;
+      justify-items: flex-start;
+      column-gap: 2rem;
+      .itames {
+        padding-top: 2rem;
+        width: 100%;
+        .card {
+          height: 100%;
+          border: none;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          padding-bottom: 1rem;
+          .heads {
+            padding: 0.5rem;
+            h1 {
+              font-size: 1rem;
+            }
+          }
+          .card-body {
+            ul {
+              li {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cloud_service_solutions_mobile {
+    display: block;
+    padding: 2rem 1em 5rem;
+
+    .head {
+      margin: 0 0 3rem;
+      padding: 0;
+      h1 {
+        font-family: "Poppins", sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        color: $primary-background-color;
+        letter-spacing: 0;
+        text-align: center;
+        padding: 1rem 0;
+        position: relative;
+        font-size: 1.2rem;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 2.5em;
+          left: 5.5em;
+          background-color: $primary-background-color;
+          border-left: 0;
+          width: 25%;
+          height: 3px;
+        }
+      }
+    }
+    .body_layout {
+      .itames {
+        width: 100%;
+        height: 380px;
+        overflow: hidden;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+        // border: 1px solid #000c662d;
+        .card {
+          height: 100%;
+          border: none;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          background-color: rgba(0, 12, 102, 0.2039215686);
+          padding-bottom: 1rem;
+          .heads {
+            @include card_head;
+          }
+          .card-body {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            ul {
+              li {
+                margin: 0.5em;
+                margin-left: 3em;
+                list-style: none;
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                text-align: start;
+                &:before {
+                  content: "\f006";
+                  font-family: "FontAwesome";
+                  float: left;
+                  margin-left: -1.5em;
+                  color: $primary-background-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ========================== Cloud_service End ========================== //
+  //  ========================== Data_service Start ========================== //
+  .data_engineer_solution {
+    padding: 3rem 1em 5rem;
+    background-color: #000c6634;
+    .head {
+      margin: 0 0 3rem;
+      padding: 0;
+      h1 {
+        font-family: "Poppins", sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        color: $primary-background-color;
+        letter-spacing: 0;
+        text-align: center;
+        padding: 1rem 0;
+        position: relative;
+        font-size: 1.2rem;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 3.5em;
+          left: 6em;
+          background-color: $primary-background-color;
+          border-left: 0;
+          width: 25%;
+          height: 3px;
+        }
+      }
+    }
+    .body_layout {
+      .iteams {
+        padding-top: 2rem;
+        .card {
+          height: 400px;
+          overflow: hidden;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          border: 1px solid #000c662d;
+          padding-bottom: 1rem;
+
+          .heads {
+            @include card_head;
+            border-radius: 0;
+          }
+          .card-body {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            ul {
+              li {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .data_engineer_solution_rod{
+  
+    padding: 3rem 0 5rem;
+    .head {
+      min-height: 54px;
+      text-align: center;
+      line-height: 34px;
+      margin-bottom: 2rem;
+  
+      h1 {
+        font-family: "Poppins", sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        color: $primary-background-color;
+        letter-spacing: 0;
+        text-align: left;
+        padding: 1rem 0;
+        position: relative;
+        font-size: 1.2rem;
+        // &::after {
+        //   position: absolute;
+        //   content: "";
+        //   top: 2em;
+        //   left: 8em;
+        //   background-color: $primary-background-color;
+        //   border-left: 0;
+        //   // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
+        //   width: 50%;
+        //   height: 3px;
+        // }
+      }
+      p{
+        font-size: 0.7em;
+        line-height: 1.5em;
+        text-align: left;
+        padding-bottom: 0.5em;
+      }
+      iframe{
+        height: 100%;
+      }
+    }
+    .body_layout {
+      .wrap{
+        display: flex;
+        column-gap: 2em;
+        flex-direction: column;
+      }
+      .iteams {
+        padding-top: 2rem;
+        .card {
+          height: 100%;
+          overflow: hidden;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          border: 1px solid #000c662d;
+          padding-bottom: 1rem;
+
+          .heads {
+            @include card_head;
+            border-radius: 0;
+          }
+          .card-body {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            ul {
+              li {
+                font-size: 0.8rem;
+                line-height: 1.2rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+    .button{
+      text-align: center;
+      a {
+        background-color: $primary-background-color;
+        padding: 1rem 1.5rem;
+        font-size: 0.7rem;
+        color: $primary-color-white;
+        position: relative;
+        top: 52px;
+        border-radius: 50px;
       }
     }
   }
