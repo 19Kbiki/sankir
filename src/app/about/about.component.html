@@ -23,6 +23,9 @@
             <li>{{ sub.subExperince }}</li>
             <ul class="nastEx" *ngFor="let nast of sub.natedEx">
               <li>{{ nast.name }}</li>
+              <ul class="list">
+                <li *ngFor="let lis of nast.sublistEx">{{lis.list}}</li>
+              </ul>
             </ul>
           </ul>
           <!-- <h2>

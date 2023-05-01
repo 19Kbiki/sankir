@@ -63,32 +63,37 @@ export class AboutComponent implements OnInit {
             'Experience Summary',
           natedEx: [
             {
-              name: '* Program Management – Multi-million-dollar P&L Management, Delivery Head, Strategy Planning and IT Partner for Client’s New Platform, Tools, and Technology Roadmap.',
+              name: 'Program Management – Multi-million-dollar P&L Management, Delivery Head, Strategy Planning and IT Partner for Client’s New Platform, Tools, and Technology Roadmap.',
             },
            
             {
-              name: '* Pre-Sales Head and Solution Architect – Bid Management, Alliance Management, Go-To-Market Strategy, Due Diligence, Consultancy, Technical Solution, CoE, PoC, and Asset Development. ',
+              name: 'Pre-Sales Head and Solution Architect – Bid Management, Alliance Management, Go-To-Market Strategy, Due Diligence, Consultancy, Technical Solution, CoE, PoC, and Asset Development. ',
             },
            
             {
-              name: '* Software Development, Solution Architecture, Framework & Assets, Consultancy in the following areas: ',
+              name: 'Software Development, Solution Architecture, Framework & Assets, Consultancy in the following areas: ',
+
+              sublistEx:[
+                {
+                  list: 'Data Engineering - Design & Development of Data Pipeline on Cloud - ELT/ETL, Spark, DWH ',
+                },
+                {
+                  list: 'Cloud Services on AWS, GCP and Azure',
+                },
+                {
+                  list: 'Distributed Computing Framework – Apache Spark - Scala/PySpark ',
+                },   {
+                  list: 'Data Engineering Toolset – Apache Airflow (MWAA), Snowflake, Azure Databricks',
+                },   {
+                  list: 'IT Transformation Programs - CRM Application Upgrades and Data Migration',
+                },
+               
+              ]
             },
-                {
-                  name: ' - Data Engineering - Design & Development of Data Pipeline on Cloud - ELT/ETL, Spark, DWH ',
-                },
-                {
-                  name: ' -	Cloud Services on AWS, GCP and Azure',
-                },
-                {
-                  name: ' -	Distributed Computing Framework – Apache Spark - Scala/PySpark ',
-                },   {
-                  name: ' - Data Engineering Toolset – Apache Airflow (MWAA), Snowflake, Azure Databricks',
-                },   {
-                  name: ' - IT Transformation Programs - CRM Application Upgrades and Data Migration',
-                },
-                {
-                  name: '* Engineering Graduate in Electronics & communication from University of Mysore',
-                },
+            {
+              name: 'Engineering Graduate in Electronics & communication from University of Mysore',
+            },
+              
           ],
         },
         {
@@ -96,25 +101,25 @@ export class AboutComponent implements OnInit {
             'Expert in Data Engineering, Cloud Services and Distributed Computing using Apache Spark',
           natedEx: [
             {
-              name: '* Data Engineering Pipeline – Architecture, Orchestration, Optimization and Monitoring',
+              name: 'Data Engineering Pipeline – Architecture, Orchestration, Optimization and Monitoring',
             },
             {
-              name: '* Spark Cluster sizing – AWS EMR, Google Cloud Dataproc',
+              name: 'Spark Cluster sizing – AWS EMR, Google Cloud Dataproc',
             },
             {
-              name: '* Cloud Storage and Datawarehouse – AWS S3, Athena, ADLS, GCS, BigQuery',
+              name: 'Cloud Storage and Datawarehouse – AWS S3, Athena, ADLS, GCS, BigQuery',
             },
             {
-              name: '* Big Data Technologies: Hadoop, HDFS, Spark, Scala, pySpark',
+              name: 'Big Data Technologies: Hadoop, HDFS, Spark, Scala, pySpark',
             },
             {
-              name: '* Databricks on Azure & AWS',
+              name: 'Databricks on Azure & AWS',
             },
             {
-              name: '* Programming Languages - Java, PySpark, Scala, PL/SQL, Spark SQL, C ',
+              name: 'Programming Languages - Java, PySpark, Scala, PL/SQL, Spark SQL, C ',
             },
             {
-              name: '* Source code management - Git, github and Maven Build',
+              name: 'Source code management - Git, github and Maven Build',
             },
          
           ],
@@ -125,22 +130,22 @@ export class AboutComponent implements OnInit {
             'Worked for TCS, Wipro and has interfaced with MNCs like Nortel, Motorola and Alcatel-Lucent',
           natedEx: [
             {
-              name: '* Feature design in Network-Switches',
+              name: 'Feature design in Network-Switches',
             },
             {
-              name: '* Data-driven Contact Centre solution in Healthcare, Banking and Telcos',
+              name: 'Data-driven Contact Centre solution in Healthcare, Banking and Telcos',
             },
 
             {
-              name: '* Data Migration, ETL to Salesforce.com application from Siebel CRM',
+              name: 'Data Migration, ETL to Salesforce.com application from Siebel CRM',
             },
             {
-              name: '* IT Transformation Programs',
+              name: 'IT Transformation Programs',
             },
             {
-              name: '* Voice Technology - Genesys Contact Center, IVR/CTI Framework, IP PBX Voice Solution',
+              name: 'Voice Technology - Genesys Contact Center, IVR/CTI Framework, IP PBX Voice Solution',
             },{
-              name: '* Telecom Technology - SS7 CallP/Billing, Wireless, Unified Messaging system, V5.2 protocol',
+              name: 'Telecom Technology - SS7 CallP/Billing, Wireless, Unified Messaging system, V5.2 protocol',
             },
           ],
         },

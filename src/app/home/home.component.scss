@@ -82,41 +82,14 @@
   .Architecture {
     padding: 5rem 0;
     .head {
-      min-height: 54px;
+      @include head;
       text-align: center;
-      line-height: 34px;
-      margin-bottom: 5rem;
-
-      h1 {
-        font-family: "Poppins", sans-serif;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 400;
-        color: $primary-background-color;
-        letter-spacing: 0;
-        text-align: center;
-        padding: 1rem 0 ;
-        position: relative;
-
-        &::after {
-          position: absolute;
-          content: "";
-          top: 2em;
-          left: 12.8em;
-          background-color: $primary-background-color;
-          border-left: 0;
-          width: 22%;
-          height: 3px;
-        }
-      }
       
         a {
           background-color: $primary-background-color;
           padding: 1rem 1.5rem;
           font-size: 1rem;
           color: $primary-color-white;
-          position: relative;
-          top: 52px;
           border-radius: 50px;
         }
       
@@ -206,34 +179,10 @@
   // ======= Client Start ======= //
   .clients {
     background-color: #000c662a;
-    padding: 5rem;
+  padding: 3rem 0 5rem;
+    
     .head {
-      min-height: 54px;
-      text-align: center;
-      line-height: 34px;
-      margin-bottom: 5rem;
-
-      h1 {
-        font-family: "Poppins", sans-serif;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 400;
-        color: $primary-background-color;
-        letter-spacing: 0;
-        text-align: center;
-        padding: 1rem 0;
-        position: relative;
-        &::after {
-          position: absolute;
-          content: "";
-          top: 2em;
-          left: 8em;
-          background-color: $primary-background-color;
-          border-left: 0;
-          width: 50%;
-          height: 3px;
-        }
-      }
+      @include head;
     }
     .body_layout {
       .heads {
@@ -304,37 +253,9 @@
 .cloud_service_solutions {
   padding: 3rem 5rem 5rem;
   background-color: $primary-color-white;
-  // border-bottom-right-radius: 200px;
-  // border-top-left-radius: 200px;
-
   .head {
-    min-height: 54px;
-    text-align: center;
-    line-height: 34px;
-    margin-bottom: 5rem;
-
-    h1 {
-      font-family: "Poppins", sans-serif;
-      margin-top: 0;
-      margin-bottom: 0;
-      font-weight: 400;
-      color: $primary-background-color;
-      letter-spacing: 0;
-      text-align: center;
-      padding: 1rem 0;
-      position: relative;
-      &::after {
-        position: absolute;
-        content: "";
-        top: 2em;
-        left: 8em;
-        background-color: $primary-background-color;
-        border-left: 0;
-        // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
-        width: 50%;
-        height: 3px;
-      }
-    }
+    @include head;
+    padding-bottom: 0;
   }
   .body_layout {
     display: grid;
@@ -352,20 +273,18 @@
         background-color: #fff;
 
         .heads {
-          border-bottom-left-radius: 100%;
-          border-bottom-right-radius: 100%;
           background: linear-gradient(
             6deg,
             #000e9c 0%,
             #000e9c 35%,
             #4a80ec 100%
           );
-          padding: 3rem;
-          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+          padding: 1rem;
+          box-shadow: 0 0 40px rgb(0 0 0 / 10%);
 
           h1 {
             color: $primary-color-white;
-            font-size: 2.6rem;
+            font-size: 1.5rem;
             font-weight: 600;
             text-align: center;
             letter-spacing: 1px;
@@ -389,16 +308,7 @@
   display: none;
   padding: 3rem 5rem 5rem;
   .head {
-    padding-bottom: 2rem;
-    h1 {
-      font-family: "Poppins", sans-serif;
-      margin-top: 0;
-      margin-bottom: 0;
-      font-weight: 400;
-      color: $primary-color-white;
-      letter-spacing: 0;
-      text-align: center;
-    }
+    @include head;
   }
   .body_layout {
     .iteams {
@@ -430,37 +340,7 @@
   background-color: #000c662a;
   padding: 3rem 5rem 5rem;
   .head {
-    min-height: 54px;
-    text-align: center;
-    line-height: 34px;
-    margin-bottom: 5rem;
-
-    h1 {
-      font-family: "Poppins", sans-serif;
-      margin-top: 0;
-      margin-bottom: 0;
-      font-weight: 400;
-      color: $primary-background-color;
-      letter-spacing: 0;
-      text-align: center;
-      padding: 1rem 0;
-      position: relative;
-      // &::after {
-      //   position: absolute;
-      //   content: "";
-      //   top: 2em;
-      //   left: 8em;
-      //   background-color: $primary-background-color;
-      //   border-left: 0;
-      //   // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
-      //   width: 50%;
-      //   height: 3px;
-      // }
-    }
-    p{
-      font-size: 1em;
-      line-height: 2em;
-    }
+   @include head
   }
   .body_layout {
     .iteams {
@@ -472,20 +352,19 @@
         box-shadow: 0 0 10px rgb(0 0 0 / 10%);
         padding-bottom: 1rem;
         .heads {
-          border-bottom-left-radius: 100%;
-          border-bottom-right-radius: 100%;
+
           background: linear-gradient(
             6deg,
             #000e9c 0%,
             #000e9c 35%,
             #4a80ec 100%
           );
-          padding: 3rem;
+          padding: 1rem;
           box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 
           h1 {
             color: $primary-color-white;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 600;
             text-align: center;
             letter-spacing: 1px;
@@ -514,42 +393,43 @@
     }
   }
 }
-.data_engineer_solution_rod{
-  
+.data_engineer_solution_rod {
   padding: 3rem 5rem 5rem;
   .head {
-    min-height: 54px;
-    text-align: center;
-    line-height: 34px;
-    margin-bottom: 5rem;
 
-    h1 {
-      font-family: "Poppins", sans-serif;
-      margin-top: 0;
-      margin-bottom: 0;
-      font-weight: 400;
-      color: $primary-background-color;
-      letter-spacing: 0;
-      text-align: left;
-      padding: 1rem 0;
-      position: relative;
-      // &::after {
-      //   position: absolute;
-      //   content: "";
-      //   top: 2em;
-      //   left: 8em;
-      //   background-color: $primary-background-color;
-      //   border-left: 0;
-      //   // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
-      //   width: 50%;
-      //   height: 3px;
-      // }
+      padding-bottom: 2rem;
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: $primary-background-color;
+        letter-spacing: 0;
+        text-align: left;
+        font-size: 2em;
+        line-height: 1.5em;
+        padding-bottom: 1em;
+      }
+    
+    ul{padding-left: 2em; list-style: none;
+    li{
+      margin: 0.5em;
+      list-style: none;
+  
+      &:before {
+        content: "\f00c";
+        font-family: "FontAwesome";
+        float: left;
+        margin-left: -1.5em;
+        color: green;
     }
+  }
+  }
     p{
       font-size: 1em;
        line-height: 2em;
       text-align: left;
     }
+    h6{padding-top: 1em;}
+
     iframe{
       margin-top: 2em;
     }
@@ -567,20 +447,18 @@
         box-shadow: 0 0 10px rgb(0 0 0 / 10%);
         padding-bottom: 1rem;
         .heads {
-          border-bottom-left-radius: 100%;
-          border-bottom-right-radius: 100%;
           background: linear-gradient(
             6deg,
             #000e9c 0%,
             #000e9c 35%,
             #4a80ec 100%
           );
-          padding: 3rem;
+          padding: 1rem;
           box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 
           h1 {
             color: $primary-color-white;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 600;
             text-align: center;
             letter-spacing: 1px;
@@ -595,6 +473,7 @@
       }
     }
   }
+  .body_layout_mob {display: none;}
   .button{
     text-align: center;
     a {
@@ -609,305 +488,7 @@
   }
 }
 //  ========================== Data_service ENd ========================== //
-@media screen and (max-width: 1300px) {
-  // ========================== Banner Start ========================== //
-  .banner {
-    .carousel-item {
-      padding: 19rem;
-      .carousel-caption {
-        .info {
-          img {
-            width: 50%;
-          }
-          h5 {
-            font-size: 3rem;
-          }
-        }
-      }
-    }
-  }
-  // ========================== Banner End ========================== //
 
-  // ========================== Hero_wrap Start ========================== //
-  .hero_wrap {
-    // ======= Architecture Start ======= //
-    .Architecture {
-      .head {
-        text-align: center;
-
-        h1 {
-          padding: 1rem 0;
-          &::after {
-            left: 8.9em;
-            width: 25%;
-          }
-        }
-      }
-
-      .body_layout {
-        column-gap: 5rem;
-        .service_box {
-          .body-cont {
-            height: 300px;
-            overflow: hidden;
-            overflow-y: scroll;
-            margin-bottom: 2rem;
-          }
-          .first,
-          h2 {
-            font-size: 1.2rem;
-          }
-
-          ul {
-            li {
-              font-size: 0.9rem;
-            }
-          }
-        }
-      }
-
-      /* for product */
-    }
-
-    // ======= Architecture End ======= //
-
-    // ======= Client Start ======= //
-    .clients {
-      background-color: #000c662a;
-      padding: 3rem;
-      .head {
-        line-height: 34px;
-        margin-bottom: 3rem;
-
-        h1 {
-          font-size: 2rem;
-          &::after {
-            left: 9em;
-
-            width: 38%;
-            height: 3px;
-          }
-        }
-      }
-      .body_layout {
-        .heads {
-          padding: 2rem 1rem;
-          column-gap: 2rem;
-
-          h1 {
-            font-size: 1.2rem;
-            color: $primary-color-white;
-          }
-        }
-        .body_info {
-          background-color: $primary-color-white;
-          .items {
-            column-gap: 1rem;
-            padding: 1rem 0.5rem;
-
-            .video {
-              width: 100%;
-            }
-            .doc {
-              width: 100%;
-              a {
-                padding: 1rem 0.7rem;
-                font-size: 0.8rem;
-              }
-            }
-            h1 {
-              font-size: 1rem;
-            }
-          }
-        }
-      }
-    }
-
-    // ======= Client End ======= //
-  }
-  // ========================== Hero_wrap end ========================== //
-
-  // ========================== Cloud_service Start ========================== //
-  .cloud_service_solutions {
-    padding: 3rem 5rem 5rem;
-    background-color: $primary-color-white;
-    // border-bottom-right-radius: 200px;
-    // border-top-left-radius: 200px;
-
-    .head {
-      line-height: 34px;
-      margin-bottom: 3rem;
-
-      h1 {
-        font-size: 2rem;
-        &::after {
-          left: 7.2em;
-
-          width: 50%;
-          height: 3px;
-        }
-      }
-    }
-    .body_layout {
-      column-gap: 1rem;
-      .itames {
-        padding-top: 2rem;
-        .card {
-          height: 400px;
-          overflow: hidden;
-          border-radius: 0;
-          .heads {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-            padding: 1rem;
-
-            h1 {
-              font-size: 1.7rem;
-            }
-          }
-          .card-body {
-            margin: 1rem 0;
-            overflow-y: scroll;
-            ul {
-              li {
-                font-size: 0.9rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .cloud_service_solutions_mobile {
-    display: none;
-    padding: 3rem 5rem 5rem;
-    .head {
-      padding-bottom: 2rem;
-      h1 {
-        font-family: "Poppins", sans-serif;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 400;
-        color: $primary-color-white;
-        letter-spacing: 0;
-        text-align: center;
-      }
-    }
-    .body_layout {
-      .iteams {
-        padding-top: 2rem;
-        .card {
-          height: 600px;
-          overflow: hidden;
-          border-radius: 0;
-          border: none;
-          box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-
-          .heads {
-            @include card_head;
-          }
-          .card-body {
-            overflow-y: scroll;
-            ul {
-              @include card_list;
-            }
-          }
-        }
-      }
-    }
-  }
-  // ========================== Cloud_service End ========================== //
-
-  //  ========================== Data_service Start ========================== //
-  .data_engineer_solution {
-    background-color: #000c662a;
-    padding: 3rem 5rem 5rem;
-    .head {
-      line-height: 34px;
-      margin-bottom: 3rem;
-
-      h1 {
-        font-size: 2rem;
-        &::after {
-          left: 7.2em;
-
-          width: 50%;
-          height: 3px;
-        }
-      }
-    }
-    .body_layout {
-      .iteams {
-        .card {
-          height: 400px;
-
-          .heads {
-            border-bottom-left-radius: 0%;
-            border-bottom-right-radius: 0%;
-            padding: 1rem;
-            h1 {
-              font-size: 1.5rem;
-            }
-          }
-          .card-body {
-            overflow-y: scroll;
-            margin: 1rem 0;
-            ul {
-              li {
-                font-size: 0.9rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .data_engineer_solution-rod {
-    background-color: #000c662a;
-    padding: 3rem 5rem 5rem;
-    .head {
-      line-height: 34px;
-      margin-bottom: 3rem;
-
-      h1 {
-        font-size: 2rem;
-        &::after {
-          left: 7.2em;
-
-          width: 50%;
-          height: 3px;
-        }
-      }
-    }
-    .body_layout {
-      .iteams {
-        .card {
-          height: 400px;
-
-          .heads {
-            border-bottom-left-radius: 0%;
-            border-bottom-right-radius: 0%;
-            padding: 1rem;
-            h1 {
-              font-size: 1.5rem;
-            }
-          }
-          .card-body {
-            overflow-y: scroll;
-            margin: 1rem 0;
-            ul {
-              li {
-                font-size: 0.9rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  //  ========================== Data_service ENd ========================== //
-}
 
 @media screen and (max-width: 1199px) {
   // ========================== Banner Start ========================== //
@@ -1990,6 +1571,47 @@
   // ========================== Banner Start ========================== //
   .banner {
     display: none;
+    .carousel-indicators [data-bs-target] {
+      width: 15px;
+      height: 15px;
+      margin: 0 0.5rem;
+      border-radius: 50%;
+    }
+    .carousel-item {
+ 
+      padding: 12rem;
+      
+    
+      .carousel-caption {
+        background: none;
+        padding:  0;
+        .info {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: space-between;
+          img{
+            display: none;
+          }
+  
+          h5 {
+            font-size: 2rem;
+            text-align: left;
+            padding-bottom: 2rem;
+            padding-left: 0;
+          }
+          .pra {
+            padding-left: 3rem;
+            h5 {
+              font-size: 2rem;
+              text-align: left;
+              padding-bottom: 2rem;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
   }
   // ========================== Banner End ========================== //
 
@@ -2003,7 +1625,7 @@
         background-color: #000c66;
       }
       .head {
-        margin: 0 0 6rem;
+        margin: 0 0 0rem;
         h1 {
           font-family: "Poppins", sans-serif;
           margin-top: 0;
@@ -2057,7 +1679,7 @@
           .first {
             width: 200px;
             padding: 10px 0;
-            font-size: 20px;
+            font-size: 15px;
           }
 
           .first::after {
@@ -2086,7 +1708,7 @@
             margin: 40px 0;
             padding: 20px;
             width: calc(100% + 40px);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
           }
 
           h2::after {
@@ -2126,10 +1748,10 @@
 
     .clients_mobile {
       display: block;
-      padding: 3rem 0 2rem;
+      padding: 1rem 0.5em;
       background-color: #000c6634;
       .head {
-        margin: 0 0 2rem;
+        margin: 0 0 1rem;
         padding: 0;
         h1 {
           font-family: "Poppins", sans-serif;
@@ -2139,9 +1761,9 @@
           color: $primary-background-color;
           letter-spacing: 0;
           text-align: center;
-          padding: 1rem 0;
+          padding:  0;
           position: relative;
-          font-size: 2rem;
+          font-size: 1.2rem;
         }
       }
       .body_layout {
@@ -2151,7 +1773,7 @@
           margin-bottom: 2rem;
           padding: 2rem 1rem;
           h1 {
-            font-size: 1.7rem;
+            font-size: 1.2rem;
             font-weight: 500;
             letter-spacing: 0.05px;
             color: $primary-background-color;
@@ -2171,7 +1793,7 @@
 
             a {
               color: $primary-color-white;
-              font-size: 1.1rem;
+              font-size: 0.8rem;
             }
           }
         }
@@ -2229,10 +1851,10 @@
   }
   .cloud_service_solutions_mobile {
     display: block;
-    padding: 2rem 1em 5rem;
+    padding: 1rem 0.5em;
 
     .head {
-      margin: 0 0 3rem;
+      margin: 0 0 ;
       padding: 0;
       h1 {
         font-family: "Poppins", sans-serif;
@@ -2242,7 +1864,7 @@
         color: $primary-background-color;
         letter-spacing: 0;
         text-align: center;
-        padding: 1rem 0;
+        padding: 0 0 1rem;
         position: relative;
         font-size: 1.2rem;
 
@@ -2304,10 +1926,10 @@
   // ========================== Cloud_service End ========================== //
   //  ========================== Data_service Start ========================== //
   .data_engineer_solution {
-    padding: 3rem 1em 5rem;
+    padding: 1rem 0.5em;
     background-color: #000c6634;
     .head {
-      margin: 0 0 3rem;
+      margin: 0 0 ;
       padding: 0;
       h1 {
         font-family: "Poppins", sans-serif;
@@ -2317,25 +1939,14 @@
         color: $primary-background-color;
         letter-spacing: 0;
         text-align: center;
-        padding: 1rem 0;
+        padding:  0;
         position: relative;
         font-size: 1.2rem;
-
-        &::after {
-          position: absolute;
-          content: "";
-          top: 3.5em;
-          left: 6em;
-          background-color: $primary-background-color;
-          border-left: 0;
-          width: 25%;
-          height: 3px;
-        }
       }
     }
     .body_layout {
       .iteams {
-        padding-top: 2rem;
+        padding-top: 0;
         .card {
           height: 400px;
           overflow: hidden;
@@ -2365,13 +1976,13 @@
     }
   }
   .data_engineer_solution_rod{
-  
-    padding: 3rem 0 5rem;
+    padding: 1rem 0.5em 5rem;
     .head {
       min-height: 54px;
-      text-align: center;
+      text-align: left;
       line-height: 34px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5em;
   
       h1 {
         font-family: "Poppins", sans-serif;
@@ -2384,17 +1995,10 @@
         padding: 1rem 0;
         position: relative;
         font-size: 1.2rem;
-        // &::after {
-        //   position: absolute;
-        //   content: "";
-        //   top: 2em;
-        //   left: 8em;
-        //   background-color: $primary-background-color;
-        //   border-left: 0;
-        //   // clip-path: polygon(100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 53%, 0% 0%);
-        //   width: 50%;
-        //   height: 3px;
-        // }
+    
+      }
+      ul{ padding-left: 1em;
+        li{font-size: 0.7em; padding-bottom: 0.1em; line-height: 1.2em;}
       }
       p{
         font-size: 0.7em;
@@ -2402,39 +2006,52 @@
         text-align: left;
         padding-bottom: 0.5em;
       }
+      h3{text-align: left;}
       iframe{
         height: 100%;
       }
     }
     .body_layout {
-      .wrap{
-        display: flex;
-        column-gap: 2em;
-        flex-direction: column;
-      }
+     display: none;
+    }
+
+    .body_layout_mob {
+      display: block;
       .iteams {
-        padding-top: 2rem;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+        // border: 1px solid #000c662d;
         .card {
           height: 100%;
-          overflow: hidden;
-          border-radius: 5px;
           border: none;
           box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-          border: 1px solid #000c662d;
+          background-color: rgba(0, 12, 102, 0.2039215686);
           padding-bottom: 1rem;
-
           .heads {
             @include card_head;
-            border-radius: 0;
           }
           .card-body {
             overflow-y: scroll;
             scroll-behavior: smooth;
             ul {
               li {
+                margin: 0.5em;
+                margin-left: 3em;
+                list-style: none;
                 font-size: 0.8rem;
                 line-height: 1.2rem;
                 text-align: start;
+                &:before {
+                  content: "\f006";
+                  font-family: "FontAwesome";
+                  float: left;
+                  margin-left: -1.5em;
+                  color: $primary-background-color;
+                }
               }
             }
           }

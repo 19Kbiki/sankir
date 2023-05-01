@@ -100,6 +100,8 @@ a {
   transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 499px) {
+
+
   .cloud_service_solutions_mobile .body_layout .owl-next,
   .cloud_service_solutions_mobile .body_layout .owl-prev {
     background-color: #000e9c9c !important;
@@ -111,12 +113,12 @@ a {
     top: 50%;
   }
 
-  .cloud_service_solutions_mobile .body_layout .owl-next:hover,
-  .cloud_service_solutions_mobile .body_layout .owl-prev:hover {
+  .cloud_service_solutions_mobile .body_layout.owl-next:hover,
+  .cloud_service_solutions_mobile .body_layout.owl-prev:hover {
     background-color: $primary-background-color !important;
   }
-  .cloud_service_solutions_mobile .body_layout .owl-next i,
-  .cloud_service_solutions_mobile .body_layout .owl-prev i {
+  .cloud_service_solutions_mobile .body_layout.owl-next i,
+  .cloud_service_solutions_mobile .body_layout.owl-prev i {
     font-size: 2rem !important;
     font-weight: 600 !important;
     color: $primary-color-white;
@@ -125,11 +127,11 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .cloud_service_solutions_mobile .body_layout .owl-prev {
+  .cloud_service_solutions_mobile .body_layout.owl-prev {
     left: -8px;
     transform: translate(-50%, -50%);
   }
-  .cloud_service_solutions_mobile .body_layout .owl-next {
+  .cloud_service_solutions_mobile .body_layout.owl-next {
     right: -68px;
     transform: translate(-50%, -50%);
   }
@@ -168,4 +170,40 @@ a {
     right: -38px;
     transform: translate(-50%, -50%);
   }
+
+
+  .data_engineer_solution_rod .body_layout_mob .owl-next,
+  .data_engineer_solution_rod .body_layout_mob .owl-prev {
+    background-color: #000e9c9c !important;
+    color: #222 !important;
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 50% !important;
+    position: absolute;
+    top: 50%;
+  }
+
+  .data_engineer_solution_rod .body_layout_mob .owl-next:hover,
+  .data_engineer_solution_rod .body_layout_mob .owl-prev:hover {
+    background-color: $primary-background-color !important;
+  }
+  .data_engineer_solution_rod .body_layout_mob .owl-next i,
+  .data_engineer_solution_rod .body_layout_mob .owl-prev i {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: $primary-color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .data_engineer_solution_rod .body_layout_mob .owl-prev {
+    left: -8px;
+    transform: translate(-50%, -50%);
+  }
+  .data_engineer_solution_rod .body_layout_mob .owl-next {
+    right: -38px;
+    transform: translate(-50%, -50%);
+  }
+
 }

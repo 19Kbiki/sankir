@@ -9,6 +9,7 @@ import * as AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
   safeSrc: SafeResourceUrl;
+  itemsList: any;
   constructor(public sanitizer: DomSanitizer) {
     this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/watch?v=uudHxXc7XPo");
   }
@@ -89,89 +90,71 @@ export class HomeComponent implements OnInit {
   ];
 
   clientTables = [
+   
+    
     {
-      name: 'Orchestration using Airflow',
+      name: '',
       products: [
         {
-          productsName: 'Dynamic DAGs',
+          productsName: '',
         },
         {
-          productsName: 'Schedule and monitoring of task-groups and tasks',
-        },
-      ],
-
-      video: 'https://player.vimeo.com/video/747633649?h=dd8c2698a0',
-      image: 'Airflow-POC-Readme',
-      url: '../../assets/readme_poc_Airflow.pdf',
-    },
-
-    {
-      name: 'Data Engineering using built-in and scalable Azure Databricks platform',
-      products: [
-        {
-          productsName: 'Infra creation ( Spark Cluster ) – compute sizing',
-        },
-        {
-          productsName: 'Data Transformation, Best practice using Key vaults',
+          productsName: '',
         },
         {
           productsName:
-            'Data Profiling – Column profile detail & Data quality metrics',
-        },
-      ],
-      video: 'https://player.vimeo.com/video/746319339?h=8732b35cd1',
-
-      image: 'Databricks-POC-Readme',
-
-      url: '../../assets//databricks-abfs-poc-README.pdf',
-    },
-    {
-      name: 'Loading retail data from AWS S3 file storage into Snowflake tables',
-      products: [
-        {
-          productsName: 'Loading data from AWS S3 files into Snowflake tables',
-        },
-        {
-          productsName: 'Automate SQL actions like DDL & DML using SnowSQL',
+            '',
         },
         {
           productsName:
-            'Creation of Snowflake Objects like Database, Warehouse and Table',
-        },
-        {
-          productsName:
-            'Load data from S3 to Snowflake Tables using COPY INTO command',
+            '',
         },
       ],
 
       video: 'https://player.vimeo.com/video/746053538?h=35e05ea07a',
-      image: 'Snowflake-POC-Readme',
-      url: '../../assets/snowflake-poc-README.pdf',
-    },
-
-    {
-      name: 'Retail data transformation using Spark, S3, AWS EMR, Athena',
-      products: [
-        {
-          productsName: 'End-to-End DE Automation using AWS CDK Toolkit',
-        },
-        {
-          productsName:
-            'EC2 creation, Airflow installation, EMR creation and Spark job submission',
-        },
-        {
-          productsName:
-            'Data Profiling – Column profile detail & Data quality metrics',
-        },
-      ],
-
-      video:
-        'https://i.vimeocdn.com/video/656988822-4dfdc935f3686c20ed284d388dfa2056c243349affef32fd44f991af5a01b763-d?mw=270&mh=130',
-      image: 'AWS-CDK-POC-Readme',
+      image: '',
       url: '',
     },
+
+    // {
+    //   name: 'Retail data transformation using Spark, S3, AWS EMR, Athena',
+    //   products: [
+    //     {
+    //       productsName: 'End-to-End DE Automation using AWS CDK Toolkit',
+    //     },
+    //     {
+    //       productsName:
+    //         'EC2 creation, Airflow installation, EMR creation and Spark job submission',
+    //     },
+    //     {
+    //       productsName:
+    //         'Data Profiling – Column profile detail & Data quality metrics',
+    //     },
+    //   ],
+
+    //   video:
+    //     'https://i.vimeocdn.com/video/656988822-4dfdc935f3686c20ed284d388dfa2056c243349affef32fd44f991af5a01b763-d?mw=270&mh=130',
+    //   image: 'AWS-CDK-POC-Readme',
+    //   url: '',
+    // },
   ];
 
+  // data
+  
+
+
+  heroList =[
+    {nameUl: "pro-Spark : Self paced online course on Data Engineering on Cloud" },
+    {nameUl : "Opportunity to experience a Data Engineering Project on Cloud  with hands-on approach"},
+     {nameUl: "Learn Distributed Computing using Apache Spark"},
+     {nameUl : "Create Data Pipeline on Cloud"},
+     {nameUl: "Explore Retail Data set in detail and define Key Performance Indicators "},
+     {nameUl: "Design and Implement Data Validation and Transformation using Apache Spark"},
+     {nameUl : "Download Project Code" },
+     {nameUl : "Test Build and Deploy Spark Application"},
+     { nameUl : "pro-Spark Course - 10 Lessons, 40 Topics, 8 weekends, 8 hours of videos, Quizzes and Assignments"},
+     {nameUl: "Become proficient in Data Engineering on Cloud"},
+  ]
   // hero_wrap array end
 
   awsItames = [
@@ -396,4 +379,6 @@ export class HomeComponent implements OnInit {
     nav: true,
   };
 }
+
+
 

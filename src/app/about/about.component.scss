@@ -20,10 +20,9 @@
 
 .about_body {
   background-color: #fff;
-  padding: 3rem 0;
+  padding: 3rem 0 0;
 
   .about_info {
-  
 
     .kiran_about {
       .content {
@@ -44,7 +43,7 @@
           padding-bottom: 1.2rem;
         }
         ul {
-          padding-left: 2rem;
+          padding-left: 0;
           li {
             list-style: none;
             text-align: start;
@@ -55,12 +54,36 @@
             padding-bottom: 0.5rem;
           }
           ul {
+            padding-left: 2em;
             li {
               font-size: 1rem;
               font-weight: 500;
               color: #000;
               letter-spacing: 0;
               padding-bottom: 0;
+              padding-bottom: 0.5em;
+              &:before {
+                content: "\f006";
+                font-family: "FontAwesome";
+                float: left;
+                margin-left: -1.5em;
+                
+              }
+            }
+            ul{
+              padding-bottom: 0.5em;
+              li{
+                font-size: 1em;
+                line-height: 2em;
+                padding: 0;
+                &:before {
+                  content: "\f00c";
+                  font-family: "FontAwesome";
+                  float: left;
+                  margin-left: -1.5em;
+                  
+                }
+              }
             }
           }
         }
@@ -68,13 +91,13 @@
       .social_media {
         padding-top: 2rem;
         a {
-          font-size: 1.3rem;
+          font-size: 1rem;
           margin: 1rem;
           color: #000;
           font-weight: 500;
           i {
             margin-right: 1rem;
-            font-size: 1.5rem;
+            font-size: 1rem;
           }
           .fa-linkedin {
             background-color: rgb(19, 42, 170);
@@ -100,7 +123,7 @@
  
 
     .sanjay_about {
-      width: 80%;
+
       .content {
         padding-top: 3rem;
         h1 {
@@ -132,6 +155,14 @@
               color: #000;
               letter-spacing: 0;
               padding-bottom: 0;
+              padding-bottom: 0.5em;
+              &:before {
+                content: "\f006";
+                font-family: "FontAwesome";
+                float: left;
+                margin-left: -1.5em;
+                
+              }
             }
           }
         }
@@ -139,13 +170,13 @@
       .social_media {
         padding-top: 2rem;
         a {
-          font-size: 1.3rem;
+          font-size: 1rem;
           margin: 1rem;
           color: #000;
           font-weight: 500;
           i {
             margin-right: 1rem;
-            font-size: 1.5rem;
+            font-size: 1rem;
           }
           .fa-linkedin {
             background-color: rgb(19, 42, 170);
@@ -371,7 +402,7 @@
 
   .about_body {
     background-color: #fff;
-    padding: 2rem 0;
+    padding: 2rem 0 0 ;
 
     .about_info {
       display: flex;
@@ -387,16 +418,17 @@
             font-weight: 800;
             padding-bottom: 0.5rem;
             color: rgb(33, 77, 119);
-            text-align: center;
+           
           }
           h3 {
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: 400;
+            line-height: 1.2em;
             padding-bottom: 1.2rem;
-            text-align: center;
+           
           }
           ul {
-            padding-left: 2rem;
+            padding-left: 1rem;
             li {
               list-style: none;
               text-align: start;
@@ -414,6 +446,22 @@
                 letter-spacing: 0;
                 padding-bottom: 0;
               }
+              ul{
+                padding-bottom: 0.5em;
+                li{
+                  font-size: 0.7em;
+                  line-height: 2em;
+                  padding: 0;
+                  &:before {
+                    content: "\f00c";
+                    font-family: "FontAwesome";
+                    float: left;
+                    margin-left: -1.5em;
+                    
+                  }
+                }
+              }
+
             }
           }
         }
@@ -450,28 +498,24 @@
     background-color: #fff;
     padding: 3rem 0;
     .about_info {
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
-      .image {
-        text-align: center;
-      }
+     
       .sanjay_about {
         width: 100%;
         .content {
-          padding-top: 3rem;
+          padding-top: 0 ;
+          text-align: left;
           h1 {
             font-size: 1rem;
             font-weight: 800;
             padding-bottom: 0.5rem;
             color: rgb(33, 77, 119);
-            text-align: center;
+            
           }
           h3 {
             font-size: 1rem;
             font-weight: 400;
             padding-bottom: 1.2rem;
-            text-align: center;
+            
           }
           ul {
             padding-left: 2rem;
